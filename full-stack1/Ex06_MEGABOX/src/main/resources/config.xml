@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="db.properties"/>
+	<typeAliases>
+		<typeAlias type="com.example.demo.dto.NoticeDTO" alias="NoticeDTO"/>
+		<typeAlias type="com.example.demo.dto.MovieDTO" alias="MovieDTO"/>
+		<typeAlias type="com.example.demo.dto.MemberDTO" alias="MemberDTO"/>
+		<typeAlias type="com.example.demo.dto.CinemaDTO" alias="CinemaDTO"/>
+		<typeAlias type="com.example.demo.dto.TimeTableDTO" alias="TimeTableDTO"/>
+	</typeAliases>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${o.driverClassName}" />
+				<property name="url" value="${o.url}" />
+				<property name="username" value="${o.user}" />
+				<property name="password" value="${o.password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="noticeMapper.xml" />
+		<mapper resource="movieMapper.xml" />
+		<mapper resource="memberMapper.xml" />
+		<mapper resource="cinemaMapper.xml" />
+		<mapper resource="timetableMapper.xml" />
+	</mappers>
+</configuration>

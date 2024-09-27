@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 요소 노드 생성하기
+        const aEl = document.createElement('a');
+        document.body.appendChild(aEl);
+        // a태그 텍스트 노드 추가하기
+        const txtEl = document.createTextNode('Go to Daum');
+        aEl.appendChild(txtEl);
+        // a태그 속성 추가하기
+        const hrefAttr = document.createAttribute('href');
+        hrefAttr.value = 'https://www.daum.net';
+        aEl.setAttributeNode(hrefAttr);
+    </script>
+</body>
+</html>

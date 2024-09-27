@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.naver.com" id="naver-id">네이버 이동</a>
+    <a href="https://www.daum.com" id="daum-id">다음 이동</a>
+    <script>
+        const aEls = document.querySelectorAll('a');
+        aEls.forEach(aEl => {
+            aEl.addEventListener('click', function(e){
+                // 기본 이벤트를 취소
+                e.preventDefault();
+                
+                console.log(aEl.getAttribute('id'));
+                if(aEl.getAttribute('id') === 'naver-id') {
+                    // this는 aEl를 가리킴
+                    this.style.backgroundColor = 'yellow';
+                }
+                if(aEl.getAttribute('id') === 'daum-id') {
+                    // this는 aEl를 가리킴
+                    this.style.backgroundColor = 'red';
+                }
+                
+            });
+        });
+    </script>
+</body>
+</html>

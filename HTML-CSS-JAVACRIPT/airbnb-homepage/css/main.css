@@ -1,0 +1,508 @@
+body {
+    height: 5000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 258px;
+    /* background-color: orange; */
+    /* border-bottom: 1px solid black; */
+    position: fixed;
+}
+
+.header .inner {
+    width: 1200px; /* 1800px */
+    height: 84px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header .inner .item1 {
+    width: 500px;
+    height: 84px;
+    /* background-color: red; */
+}
+
+.header .inner .item1 .item1_box {
+    width: 180px;
+    height: 84px;
+    cursor: pointer;
+    /* background-color: black; */
+    display: flex;
+}
+
+.header .inner .item1 .item1_box .item1_logo {
+    width: 84px;
+    height: 84px;
+    background-image: url(../../images/airbnb_images/airbnb_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header .inner .item1 .item1_box .item1_text_img {
+    width: 100px;
+    height: 84px;
+    background-image: url(../../images/airbnb_images/airbnb_text.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 18px;
+    right: 20px;
+}
+
+
+.header .inner .item2 {
+    width: 700px;
+    height: 84px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .inner .item2 .item2_box1 {
+    position: relative;
+    padding-right: 50px;
+    cursor: pointer;
+}
+
+.header .inner .item2 .item2_box2 {
+    position: relative;
+    cursor: pointer;
+}
+
+.header .inner .item3 {
+    width: 500px;
+    height: 84px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .inner .item3 .item3_box1 a {
+    color: #333;
+}
+
+.header .inner .item3 .item3_box2 {
+    cursor: pointer;
+}
+
+.header .inner .item3 .item3_box3 {
+    cursor: pointer;
+}
+.header .inner2 {
+    height: 84px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .inner2 .search {
+    width: 1000px;
+    height: 50px;
+    /* background-color: pink; */
+    border: 1px solid black;
+    border-radius: 100px;
+    display: flex;
+}
+
+.header .inner2 .search .search_box1 {
+    width: 350px;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}
+
+.header .inner2 .search .search_box2 {
+    width: 150px;
+    cursor: pointer;
+}
+
+.header .inner2 .search .search_box3 {
+    width: 150px;
+    cursor: pointer;
+}
+
+.header .inner2 .search .search_box4 {
+    width: 350px;
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+}
+
+.header .inner2 .search .search_box_item {
+    padding: 2px;
+}
+
+.header .inner2 .search .search_box_item2 {
+    color: gray;
+}
+
+.header .inner2 .search .search_box4 .search_icon {
+    height: 50px;
+    background-image: url(../../images/airbnb_images/searchicon.png);
+    background-repeat: no-repeat;
+    position: relative;
+    left: 260px;
+    bottom: 35px;
+}
+
+.header .container {
+    height: 90px;
+    /* background-color: orange; */
+    position: relative;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .container_box {
+    width: 1200px; /* 1900px */
+    height: 78px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .container_box .item {
+    width: 75px;
+    height: 78px;
+    cursor: pointer;
+    /* background-color: gray; */
+}
+
+.container .container_box .item .item_img1 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img2 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img3 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img4 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img5 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/248f85bf-e35e-4dc3-a9a1-e1dbff9a3db4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img6 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img7 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/51f5cf64-5821-400c-8033-8a10c7787d69.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img8 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img9 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img10 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img11 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img12 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img13 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img14 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img15 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/3271df99-f071-4ecf-9128-eb2d2b1f50f0.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img16 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/f0c5ca0f-5aa0-4fe5-b38d-654264bacddf.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img17 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/a4634ca6-1407-4864-ab97-6e141967d782.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img18 {
+    width: 75px;
+    height: 50px;
+    background-image: url(https://a0.muscache.com/pictures/3726d94b-534a-42b8-bca0-a0304d912260.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .container_box .item .item_img19 {
+    width: 75px;
+    height: 50px;
+    background-image: url(../../images/airbnb_images/righticon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 15px;
+}
+
+.container .container_box .item .item_text {
+    width: 75px;
+    height: 28px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .container_box .item .item_texture {
+    width: 100px;
+    height: 28px;
+    /* background-color: black; */
+    text-align: center;
+    font-size: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.whitebox {
+    height: 258px;
+    margin-bottom: 10px;
+}
+
+.top-menu-box {
+    height: 750px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-menu-box .top-menu {
+    width: 1200px; /* 1800px */
+    height: 720px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-menu-box .top-menu .top-menu-item {
+    width: 270px;
+    height: 330px;
+    /* background-color: gray; */
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.top-menu-box .top-menu .top-menu-item .top-menu-img a p{
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.top-menu-box .top-menu .top-menu-item .top-menu-img a p:nth-child(2) {
+    color: black;
+}
+
+
+.top-menu-box .top-menu .top-menu-item .top-menu-img a p:last-child {
+    color: gray;
+}
+
+.top-menu-box .top-menu .top-menu-item .top-menu-img a img {
+    width: 270px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.whitebox2 {
+    height: 80px;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.whitebox2 .text {
+    position: relative;
+    left: 60px;
+    font-size: 40px;
+}
+
+.last-box {
+    height: 900px;
+    background-color: rgb(247, 247, 247);)
+}
+
+.last-box .inner {
+    width: 1150px;
+    height: 400px;
+    background-color: red;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+.last-box .inner .container {
+    height: 72px;
+}
+
+.last-box .inner .container .item1 {
+   height: 72px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.last-box .inner .container .item1 h1 {
+    font-size: 30px;
+}
+
+.last-box .inner .container .item2 {
+    width: 1150px;
+    height: 72px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.last-box .inner .container .item2 div {
+    cursor: pointer;
+    color: gray;
+    padding: 10px;
+
+}
+
+.last-box .inner .container .item3 {
+    margin-top: 20px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.last-box .inner .container .item3 div {
+    width: 150px;
+}
+
+.last-box .inner .container .item3 h1 {
+    margin-bottom: 5px;
+    color: black;
+}
+
+.last-box .inner .container .item3 span {
+    color: gray;
+}
+
+.last-box .inner2 {
+    width: 1150px;
+    height: 440px;
+    background-color: yellow;
+    margin: 0 auto;
+}
+

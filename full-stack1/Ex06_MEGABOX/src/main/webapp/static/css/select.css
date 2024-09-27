@@ -1,0 +1,1111 @@
+#selected {
+    background-color: rgb(80, 51, 150);
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    margin: 0 auto;
+}
+
+main .container {
+    width: 1100px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    top: 45px;
+}
+
+main .container h1 {
+    position: absolute;
+    top: 50px;
+    font-weight: 400;
+    font-size: 27px;
+
+}
+
+main .container .select-people {
+    width: 730px;
+    height: 60px;
+    position: absolute;
+    top: 130px;
+    border-top: 1px solid black;
+}
+
+main .container .select-people .top-menu {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+main .container .select-people .top-menu > p {
+    height: 20px;
+    color: #222;
+}
+
+main .container .select-people .top-menu button {
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(216, 217, 219);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+main .container .select-people .top-menu button:hover {
+    border: 1px solid black;
+}
+
+main .container .select-people .top-menu button .material-symbols-outlined {
+    color: gray;
+}
+
+main .container .select-people .top-menu button p {
+    font-size: 10px;
+    color: gray;
+}
+
+
+main .container .select-people .bottom-menu {
+    width: 100%;
+    height: 550px;
+    border: 1px solid rgb(216, 217, 219);
+    position: relative
+}
+
+main .container .select-people .bottom-menu .top {
+    width: 100%;
+    height: 60px;
+    background-color: #f2f4f5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .container .select-people .bottom-menu .top .item {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container .select-people .bottom-menu .top .item:last-child {
+    margin-right: 20px;
+}
+
+main .container .select-people .bottom-menu .top .item > p {
+    font-size: 12px;
+}
+
+main .container .select-people .bottom-menu .top .item .math {
+    width: 90px;
+    height: 40px;
+    border: 1px solid rgb(216, 217, 219);
+    border-radius: 5px;
+    display: flex;
+    background-color: #fff;
+}
+
+main .container .select-people .bottom-menu .top .item .math .add {
+    width: 25px;
+    height: 100%;
+    border-right: 1px solid rgb(216, 217, 219); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .top .item .math .number {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .top .item .math .subtract {
+    width: 25px;
+    height: 100%;
+    border-left: 1px solid rgb(216, 217, 219);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .top .item2 {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container .select-people .bottom-menu .top .item2:last-child {
+    margin-right: 20px;
+}
+
+main .container .select-people .bottom-menu .top .item2 > p {
+    font-size: 12px;
+}
+
+main .container .select-people .bottom-menu .top .item2 .math {
+    width: 90px;
+    height: 40px;
+    border: 1px solid rgb(216, 217, 219);
+    border-radius: 5px;
+    display: flex;
+    background-color: #fff;
+}
+
+main .container .select-people .bottom-menu .top .item2 .math .add {
+    width: 25px;
+    height: 100%;
+    border-right: 1px solid rgb(216, 217, 219); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .top .item2 .math .number {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .top .item2 .math .subtract {
+    width: 25px;
+    height: 100%;
+    border-left: 1px solid rgb(216, 217, 219);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .top .item3 {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container .select-people .bottom-menu .top .item3:last-child {
+    margin-right: 20px;
+}
+
+main .container .select-people .bottom-menu .top .item3 > p {
+    font-size: 12px;
+}
+
+main .container .select-people .bottom-menu .top .item3 .math {
+    width: 90px;
+    height: 40px;
+    border: 1px solid rgb(216, 217, 219);
+    border-radius: 5px;
+    display: flex;
+    background-color: #fff;
+}
+
+main .container .select-people .bottom-menu .top .item3 .math .add {
+    width: 25px;
+    height: 100%;
+    border-right: 1px solid rgb(216, 217, 219); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .top .item3 .math .number {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .top .item3 .math .subtract {
+    width: 25px;
+    height: 100%;
+    border-left: 1px solid rgb(216, 217, 219);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .top .item4 {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container .select-people .bottom-menu .top .item4:last-child {
+    margin-right: 20px;
+}
+
+main .container .select-people .bottom-menu .top .item4 > p {
+    font-size: 12px;
+}
+
+main .container .select-people .bottom-menu .top .item4 .math {
+    width: 90px;
+    height: 40px;
+    border: 1px solid rgb(216, 217, 219);
+    border-radius: 5px;
+    display: flex;
+    background-color: #fff;
+}
+
+main .container .select-people .bottom-menu .top .item4 .math .add {
+    width: 25px;
+    height: 100%;
+    border-right: 1px solid rgb(216, 217, 219); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .top .item4 .math .number {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .top .item4 .math .subtract {
+    width: 25px;
+    height: 100%;
+    border-left: 1px solid rgb(216, 217, 219);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .bottom {
+    width: 100%;
+    height: 390px;
+}
+
+main .container .select-people .bottom-menu .bottom .line {
+    width: 644px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+}
+
+main .container .select-people .bottom-menu .bottom .line img {
+    cursor: default;
+}
+
+main .container .select-people .bottom-menu .bottom .left {
+    position: absolute;
+    left: 270px;
+    top: 130px;
+}
+
+main .container .select-people .bottom-menu .bottom .left img {
+    width: 20px;
+    height: 15px;
+    cursor: default;
+}
+
+main .container .select-people .bottom-menu .bottom .seat-main-area {
+    position: absolute;
+    top: 150px;
+    left: 225px;
+}
+
+main .container .select-people .bottom-menu .bottom .seat-main-area .area-number {
+    width: 15px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(216, 217, 219);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .bottom .seat-main-area .area-number:last-child {
+    margin: 0;
+}
+
+main .container .select-people .bottom-menu .bottom .seat-main-area .area-number p {
+    width: 15px;
+    height: 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .select-people .bottom-menu .bottom .seat-sub-area {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 150px;
+    left: 305px;
+}
+
+main .container .select-people .bottom-menu .bottom .seat-sub-area .area-number {
+    width: 15px;
+    height: 20px;
+    background-color: #333;
+    margin-right: 5px;
+    margin-bottom: 7.2px;
+    cursor: pointer;
+}
+
+main .container .select-people .bottom-menu .bottom .seat-sub-area .area-number:hover {
+    background-color: rgb(80, 51, 150);
+}
+
+main .container .select-people .bottom-menu .bottom .seat-sub-area .area-number p {
+    width: 15px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: #fff;
+}
+
+main .container .select-people .bottom-menu .bottom .up {
+    position: absolute;
+    top: 340px;
+    right: 320px;
+}
+
+main .container .select-people .bottom-menu .bottom .up img {
+    width: 15px;
+    height: 20px;
+    cursor: default;
+}
+
+main .container .info {
+    width: 340px;
+    height: 600px;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+main .container .info .title {
+    width: 300px;
+    height: 80px;
+    position: relative;
+    margin: 0 auto;
+    border-bottom: 1px solid #5c5c5c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .container .info .title p {
+    font-size: 15px;
+    color: rgb(196, 196, 196);
+}
+
+main .container .info .title p:first-child {
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+main .container .info .area {
+    width: 300px;
+    height: 120px;
+    margin: 0 auto;
+    border-bottom: 1px solid #5c5c5c;
+    position: relative
+}
+
+main .container .info .area .main-area {
+    width: 130px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+main .container .info .area .main-area p {
+    font-size: 13px;
+    color: rgb(196, 196, 196);
+    padding-bottom: 5px;
+}
+
+main .container .info .area select {
+    width: 160px;
+    height: 30px;
+    margin-top: 20px;
+    border: 1px solid black;
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+}
+
+main .container .info .area .movie-image {
+    width: 80px;
+    height: 95px;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+
+main .container .info .area .movie-image img {
+    width: 80px;
+    height: 95px;
+}
+
+main .container .info .select-menu {
+    width: 300px;
+    height: 200px;
+    margin: 10px auto 0;
+    border: 1px solid #5c5c5c;
+    border-radius: 5px;
+    display: flex;
+}
+
+main .container .info .select-menu .select-info {
+    width: 170px;
+    height: 200px;
+    border-right: 1px solid #5c5c5c;
+}
+
+main .container .info .select-menu .select-info .select-option {
+    width: 100px;
+    height: 150px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 14px;
+    color: rgb(196, 196, 196);
+}
+
+main .container .info .select-menu .select-info .select-option .select {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+main .container .info .select-menu .select-info .select-option .select .shape {
+    width: 14px;
+    height: 14px;
+    background-color: rgb(80, 51, 150);
+    margin-right: 5px;
+}
+
+main .container .info .select-menu .select-info .select-option .ticket-complete {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+main .container .info .select-menu .select-info .select-option .ticket-complete .shape {
+    width: 14px;
+    height: 14px;
+    background-color: rgb(204, 204, 204);
+    margin-right: 5px;
+}
+
+main .container .info .select-menu .select-info .select-option .select-impossible {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+main .container .info .select-menu .select-info .select-option .select-impossible .shape {
+    width: 14px;
+    height: 14px;
+    background-color: rgb(204, 204, 204);
+    margin-right: 5px;
+}
+
+main .container .info .select-menu .select-info .select-option .normal {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+main .container .info .select-menu .select-info .select-option .normal .shape {
+    width: 14px;
+    height: 14px;
+    background-color: rgb(116, 116, 116);
+    margin-right: 5px;
+}
+
+main .container .info .select-menu .select-info .select-option .disabled-seat {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+main .container .info .select-menu .select-info .select-option .disabled-seat .shape {
+    width: 14px;
+    height: 14px;
+    background-color: rgb(50, 134, 25);
+    margin-right: 5px;
+}
+
+main .container .info .select-menu .select-seat {
+    width: 130px;
+    height: 200px;
+}
+
+main .container .info .select-menu .select-seat .select-seat-top {
+    width: 70px;
+    height: 20px;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+main .container .info .select-menu .select-seat p {
+    color: rgb(196, 196, 196);
+}
+
+main .container .info .select-menu .select-seat .seat-menu {
+    width: 100px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .container .info .select-menu .select-seat .seat-menu .seat-item {
+    width: 45px;
+    height: 30px;
+    background-color: #333;
+    border: 1px solid #5c5c5c;
+}
+
+main .container .info .select-menu .select-seat .seat-menu .seat-item p {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .info .people-menu {
+    height: 70px;
+    position: relative;
+    display: flex;
+    left: 20px;
+    align-items: center;
+}
+
+main .container .info .people-menu .people-type {
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+    display: none;
+}
+
+main .container .info .people-menu .people-type p {
+    height: 50px;
+    color: rgb(196, 196, 196);
+    display: flex;
+    align-items: center;
+}
+
+main .container .info .payment-money {
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container .info .payment-money p {
+    color: #fff;
+}
+
+main .container .info .payment-money .money {
+    display: flex;
+    justify-content: center;
+}
+
+main .container .info .payment-money .money p:first-child {
+    color: rgb(89, 190, 187);
+    font-size: 16px;
+}
+
+main .container .info .prev-next-menu {
+    width: 340px;
+    height: 50px;
+    background-color: orange;
+    position: relative;
+    top: 21px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+}
+
+main .container .info .prev-next-menu .prev {
+    width: 170px;
+    height: 50px;
+    background-color: rgb(83, 86, 91);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 10px;
+    cursor: pointer;
+}
+
+main .container .info .prev-next-menu .prev p {
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+}
+
+main .container .info .prev-next-menu .next {
+    width: 170px;
+    height: 50px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 10px 0;
+}
+
+main .container .info .prev-next-menu .next p {
+    color: rgb(219, 202, 186);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+main .container .select-people .bottom-menu .screen {
+    width: 100%;
+    height: 490px;
+    position: absolute;
+    top: 60px;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
+
+main .container .select-people .bottom-menu .screen .material-symbols-outlined {
+    font-size: 50px;
+    color: #fff;
+    position: relative;
+    left: 350px;
+}
+
+main .container .select-people .bottom-menu .screen p {
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+}
+
+
+main .select-pop-up {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 45px;
+    display: none;
+}
+
+main .sub-pop {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: none;
+}
+
+main .sub-pop .pop-up {
+    width: 300px;
+    height: 150px;
+}
+
+main .sub-pop .pop-up .top {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(80, 51, 150);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .sub-pop .pop-up .top p {
+    position: relative;
+    right: 40px;
+    color: #fff;
+}
+
+main .sub-pop .pop-up .top .material-symbols-outlined {
+    position: relative;
+    left: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+main .sub-pop .pop-up .bottom {
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+}
+
+main .sub-pop .pop-up .bottom > p {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 15px;
+}
+
+main .sub-pop .pop-up .bottom .check {
+    width: 60px;
+    height: 40px;
+    background-color: rgb(80, 51, 150);
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+main .sub-pop .pop-up .bottom .check p {
+    color: #fff;
+}
+
+main .seat-pop {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: none;
+}
+
+main .seat-pop .pop-up {
+    width: 300px;
+    height: 150px;
+}
+
+main .seat-pop .pop-up .top {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(80, 51, 150);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .seat-pop .pop-up .top p {
+    position: relative;
+    right: 40px;
+    color: #fff;
+}
+
+main .seat-pop .pop-up .top .material-symbols-outlined {
+    position: relative;
+    left: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+main .seat-pop .pop-up .bottom {
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+}
+
+main .seat-pop .pop-up .bottom > p {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 15px;
+}
+
+main .seat-pop .pop-up .bottom .check {
+    width: 60px;
+    height: 40px;
+    background-color: rgb(80, 51, 150);
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+main .seat-pop .pop-up .bottom .check p {
+    color: #fff;
+}
+
+
+main .cancel-pop {
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: none;
+}
+
+main .cancel-pop .pop-up {
+    width: 300px;
+    height: 150px;
+}
+
+main .cancel-pop .pop-up .top {
+    width: 400px;
+    height: 50px;
+    background-color: rgb(80, 51, 150);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .cancel-pop .pop-up .top p {
+    position: relative;
+    right: 60px;
+    color: #fff;
+}
+
+main .cancel-pop .pop-up .top .material-symbols-outlined {
+    position: relative;
+    left: 70px;
+    color: #fff;
+    cursor: pointer;
+}
+
+main .cancel-pop .pop-up .bottom {
+    width: 400px;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+}
+
+main .cancel-pop .pop-up .bottom > p {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 14px;
+}
+
+main .cancel-pop .pop-up .bottom .cancel {
+    width: 60px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(80, 51, 150);
+    border-radius: 5px;
+}
+
+main .cancel-pop .pop-up .bottom .cancel:hover {
+    background-color: rgb(242, 244, 248);
+}
+
+main .cancel-pop .pop-up .bottom .check {
+    width: 60px;
+    height: 40px;
+    background-color: rgb(80, 51, 150);
+    position: absolute;
+    top: 40px;
+    right: 130px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+main .cancel-pop .pop-up .bottom .check:hover {
+    background-color: rgb(53, 31, 103);
+}
+
+main .cancel-pop .pop-up .bottom .check p {
+    color: #fff;
+}
+
+
+main .complete-pop {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: none;
+}
+
+main .complete-pop .pop-up {
+    width: 300px;
+    height: 150px;
+}
+
+main .complete-pop .pop-up .top {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(80, 51, 150);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .complete-pop .pop-up .top p {
+    position: relative;
+    right: 40px;
+    color: #fff;
+}
+
+main .complete-pop .pop-up .top .material-symbols-outlined {
+    position: relative;
+    left: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+main .complete-pop .pop-up .bottom {
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+}
+
+main .complete-pop .pop-up .bottom > p {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 15px;
+}
+
+main .complete-pop .pop-up .bottom .check {
+    width: 60px;
+    height: 40px;
+    background-color: rgb(80, 51, 150);
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+main .complete-pop .pop-up .bottom .check p {
+    color: #fff;
+}
+
+
+
+
+
+
+
+main .home-menu {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(68, 68, 68);
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+main .home-menu .select-menu {
+    width: 500px;
+    height: 100%;
+    position: relative;
+    left: 80px;
+    display: flex;
+    align-items: center;
+}
+
+main .home-menu .select-menu .material-symbols-outlined {
+    color: gray;
+}
+
+main .home-menu .select-menu .select1 a {
+    display: flex;
+    align-items: center;
+}
+
+main .home-menu .select-menu .select1 a:hover p {
+    text-decoration: underline;
+}
+
+main .home-menu .select-menu .select1 .material-symbols-outlined {
+    position: relative;
+    top: 2px;
+}
+
+main .home-menu .select-menu .select2  a {
+    display: flex;
+    align-items: center;
+}
+
+main .home-menu .select-menu .select2  a:hover  p {
+    text-decoration: underline;
+}
+
+main .home-menu .select-menu .select2 .material-symbols-outlined {
+    position: relative;
+    top: 2px;
+}

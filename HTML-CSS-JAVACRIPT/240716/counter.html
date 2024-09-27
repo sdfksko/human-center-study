@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="number">0</h2>
+    <div>
+        <button id="increase">+1</button>
+        <button id="decrease">-1</button>
+    </div>
+    <script>
+       // DOM 선택하기
+       const number = document.getElementById('number');
+       const increase = document.getElementById('increase');
+       const decrease = document.getElementById('decrease');
+
+       console.log(number.innerText);   // 내용 숫자
+       console.log(increase.offsetTop); // top 위치
+       console.log(decrease.id);        // id 속성값
+
+       // 이벤트 리스너 등록하기
+       increase.onclick = () => {
+           //console.log("increase가 클릭됨");
+           const currentValue = parseInt(number.innerText);
+           number.innerText = currentValue + 1;
+       };
+       decrease.onclick = () => {
+           //console.log("decrease가 클릭됨");
+           const currentValue = parseInt(number.innerText);
+           number.innerText = currentValue - 1;
+       };
+    </script>
+</body>
+</html>

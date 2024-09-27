@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.google.com">Go to Google</a>
+    <script>
+        const el = document.querySelector('a');
+        // href의 값을 가져오기
+        console.log(el.getAttribute('href'));
+        // href의 값을 수정하기
+        el.setAttribute('href', 'https://www.naver.com');
+        el.textContent = 'Go to Naver';
+        el.setAttribute('target', '_blank');
+    </script>
+</body>
+</html>

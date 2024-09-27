@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- 
+        span(display가 inline)의 특징
+            1. 줄바꿈 x
+            2. 포함한 컨텐츠 크기만큼 가로,세로가 자동으로 줄어듬
+
+        div(display가 block)의 특징
+            1. 줄바꿈 o
+            2. 가로는 부모 요소의 크기만큼 자동으로 늘어나고 세로는 부모 요소의 크기만큼 자동으로 줄어듬
+    -->
+    <div class="parent-vw">
+        Hello World(parent-vw)
+    </div>
+    <br><br>
+    <div class="parent-vh">
+        Hello World(parent-vh)
+    </div>
+    <br><br>
+    <span>Hello</span>
+    <span>World</span>
+    <br><br>
+    <div>Hello</div>
+    <div>World</div>
+    <br><br>
+    <div style="width:300px; height: 200px;">
+        <div>Hello</div>
+        <div>World</div>
+    </div>
+    <br><br>
+    <div class="parent">
+        Hello World(parent)
+        <div class="child">
+            Hello World(child)
+            <div class="child-to-child">
+                Hello World(child-to-child)
+            </div>            
+        </div>
+    </div>
+    <br><br>
+    <div class="parent-em">
+        Hello World(parent-em)
+        <div class="child-em">
+            Hello World(child-em)
+        </div>
+    </div>
+    <br><br>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [10, 20, 30];
+        console.log(arr.length);
+        arr.push(40);
+        console.log(arr);
+        arr.pop();
+        console.log(arr);
+        arr.unshift(0);
+        console.log(arr);
+        arr.shift();
+        console.log(arr);
+
+        const arr2 = [10, 20, 30, 40];
+        arr2.forEach(function(v){
+            console.log(v);
+        });
+        console.log(arr2);
+
+        const date = new Date();
+        console.log(date);
+        const date2 = new Date(2022, 11, 25);
+        console.log(date2);
+        const date3 = new Date("2022-12-25")
+        console.log(date3);
+        const date4 = new Date("2022/12/25/18:30:50");
+        console.log(date4);
+        const date5 = new Date(2022, 11, 25, 18, 30, 50);
+        const dateFormat = `${date5.getFullYear()}-${date5.getMonth()+1}-${date5.getDate()} ${date5.getHours()}:${date5.getMinutes()}:${date.getSeconds()}`;
+        console.log(dateFormat);
+        const date6 = new Date().getTime();
+        console.log(date6);
+        const date7 = new Date('2022-12-23');
+        const date8 = new Date('2022-12-25');
+        const dateDiff = date8.getTime() - date7.getTime();
+        const interval = dateDiff / (24 * 60 * 60 * 1000);
+        console.log(`두 날짜의 차이는 ${interval}일입니다.`);
+
+        const floatNum = 10.52;
+        console.log(floatNum);
+        console.log(Math.floor(floatNum));
+        console.log(Math.ceil(floatNum));
+        console.log(Math.round(floatNum));
+
+        const random = Math.random();
+        console.log(random);
+
+        function getMaxRandom(max) {
+            return Math.floor(Math.random() * max) + 1;
+        }
+        const getMaxRandom2 = getMaxRandom(20);
+        console.log(getMaxRandom2);
+
+        function getMinMaxRandom(min, max){
+            return Math.floor(Math.random() * (max - min)) + 1 + min;
+        }
+        const getMaxRandom3 = getMinMaxRandom(10, 20);
+        console.log(getMaxRandom3);
+        
+        const arr4 = [10, 120, 30, 50, 20];
+        let a = 0;
+        arr4.forEach(function(v){
+            if(a < v) {
+                a = v;
+            }
+        })
+        console.log(a);
+    </script>
+</body>
+</html>

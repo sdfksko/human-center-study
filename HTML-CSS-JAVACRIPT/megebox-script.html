@@ -1,0 +1,13 @@
+<script>
+    const data2 = document.querySelectorAll(".main-img");
+    data2.forEach(item=>{
+        item.addEventListener('mouseover',function(){
+            console.log(item);
+            this.querySelector(".movie_hidden").style.display='block';
+            this.querySelector("img").style.borderRadius='5px';
+        })
+        item.addEventListener('mouseout',function(){
+            this.querySelector(".movie_hidden").style.display='none';
+        })
+    })
+</script>

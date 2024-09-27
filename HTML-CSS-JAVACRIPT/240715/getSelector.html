@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box-1">
+        <p class="text">text-1</p>
+        <p class="text">text-2</p>
+    </div>
+    <div class="box-2">
+        <p class="text">text-3</p>
+        <p class="text">text-4</p>
+    </div>
+    <script>
+        const el = document.querySelector('.box-1');
+        console.log(el);
+
+        const el2 = document.getElementsByClassName('box-1')[0].children;
+        console.log(el2);
+
+        const el3 = document.querySelector('.text');
+        console.log(el3);
+
+        const el4 = document.querySelectorAll('.text');
+        console.log('el4[1]: ', el4[1].textContent);
+
+        const el5 = document.querySelectorAll('.box-1 .text');
+        console.log('el5:', el5);
+    </script>
+</body>
+</html>

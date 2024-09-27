@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .apple {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* animation-name: bgchange;
+            animation-duration: 5s;
+            animation-delay: 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 3; */
+            animation: bgchange 5s 5s 3 forwards;
+        }
+        @keyframes bgchange {
+            0%{background-color: red;}
+            25%{background-color: orange;}
+            50%{background-color: yellow;}
+            100%{background-color: green;}
+        }
+        .pear {
+            width:100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: move;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+        }
+        @keyframes move {
+            form{
+                left:0;
+            }
+            to{
+                left:300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="apple"></div>
+    <br>
+    <div class="pear"></div>
+    <button id="start">start</button>
+    <button id="paused">paused</button>
+    <script>
+        const box = document.querySelector(".pear");
+        document.getElementById("start").addEventListener("click", function(){
+            box.style.animationPlayState = "running";
+        });
+        document.getElementById("paused").addEventListener("click", function(){
+            box.style.animationPlayState = "paused";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 모든 태그에 적용 */
+        /*
+        #orange{
+            color:red;
+        }
+
+        .orange{
+            color:orange;
+        }
+        */
+        /* id와 class에서의 css 적용 우선순위는 id가 높다. */
+        /* 복합 선택자 */
+        /* span.orange{ 
+            color:red;
+        }
+        /* > -> 모든 자식(자손,후손 x) 요소를 나타냄 */
+        /* ul > li{    
+            color: red;
+        }  */
+        
+        /* 띄어쓰기 -> 모든 자손(후손)(자식포함) 요소를 나타냄 */
+        /* ul .oragne{
+            color: red;
+        } */
+        /* div .orange{
+            color: red;
+        } */
+
+        /* + -> 바로 인접(형제) 요소를 나타냄(인접 형제 선택자) */
+        /* .orange + li{
+            color: red;
+        } */
+         /* ~ -> 모든 인접(형제) 요소를 나타냄(일반 형제 선택자) */
+        /* .orange ~ li{
+            color: red;
+        } */
+
+        /* hover 가상선택자 -> 선택자 요소에 마우스 커서가 올라가 있는 동안 선택 */
+         /* a:hover{
+            color: red;
+        }
+
+         li:hover{
+            color: red;
+        }  */
+        
+         /* active 가상선택자 -> 선택자 요소에 마우스 클릭하는 동안 선택 */
+        /* a:active{
+            color: red;
+        } */
+
+        input:focus{
+            background-color: orange;
+        }
+
+        /* first-child -> 선택자가 형제 요소 중 첫째라면 선택 */
+        /* .fruits span:first-child{
+            color: red;
+        } */
+        /* first-child -> 태그 div가 형제 요소 중 첫째가 아니라서 아래 예제에는 적용이 안됨 */
+        /* .fruits div:first-child{
+            color: red;
+        } */
+
+        /* last-child -> 선택자가 형제 요소 중 마지막이라면 선택 */
+        /* .fruits h3:last-child{
+            color: red;
+        } */
+
+        /* nth-child(n) -> 모든 선택자가 형제 요소의 n번째 선택 */
+        /* .fruits *:nth-child(2){
+            color: red;
+        } */
+        
+        /* nth-child(2n) -> 모든 선택자가 형제 요소의 2n번째(짝수) 선택 */
+        /* .fruits *:nth-child(2n){
+            color: red;
+        } */
+        /* nth-child(2n+1) -> 모든 선택자가 형제 요소의 2n+1번째(홀수) 선택 or 마이너스(2n-1)도 가능 */
+        /* .fruits *:nth-child(2n+1){
+            color: red;
+        } */
+
+        .fruit *:not(span){
+            color: red;
+        }
+
+        /* 선택자box요소의 컨텐츠 전에 내용을 삽입 */
+        .box::before{
+            content: '앞';
+            color: red;
+        }
+        /* 선택자box요소의 컨텐츠 뒤에 내용을 삽입 */
+        .box::after{
+            content: '뒤';
+            color: red;
+        }
+
+        /* type를 포함한 모든 요소 선택 */
+        [type]{
+            background-color: aqua;
+        }
+
+        /* disabled를 포함한 모든 요소 선택 */
+        [disabled]{
+            background-color: red;
+        }
+
+        /* type이 password를 포함한 모든 요소 선택 */
+        [type=password]{
+            background-color: red;
+        }
+
+        /* nth-of-type(n) -> 순서와 상관없이 n개수만큼의 위치의 태그 디자인이 적용됨 <-> nth-child */
+       div p:nth-of-type(2) {
+            color: red;
+        }
+
+        div { color: #330404 !important; }
+        #color_yellow { color: yellow; }
+        .color_green { color: green; }
+        div { color: blue; }
+        * { color: darkblue; }
+        body { color: violet; }
+    </style>
+</head>
+<body>
+    <div id="color_yellow" class="color_green" style="color: orange;">
+        Hello World
+    </div>
+    <div>
+        <p>lorem 1</p>
+        <span>span 1</span>
+        <p>lorem 2</p>
+    </div>
+    <div>
+        <p>lorem 3</p>
+        <span>span 2</span>
+        <span>span 3</span>
+        <p>lorem 4</p>
+    </div>
+    <br><br><br><br>
+
+    <div class="box">
+        Content
+    </div>
+    <div class="fruits">
+        <span>딸기</span>
+        <span>수박</span>
+        <div>오렌지</div>
+        <p>망고</p>
+        <h3>사과</h3>
+    </div>
+    <input type="text" />
+    <input type="password" />
+    <input type="text" disabled />
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>
+                딸기
+                <ul class="orange">
+                    <li>서브과일1</li>
+                </ul>
+            </li>
+            <li id="orange" class="orange">오렌지</li>
+            <li>망고</li>
+            <li>사과</li>
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span class="orange">오렌지</span>
+        <span>포도</span>
+    </div>
+    <span class="orange">오렌지</span>
+    <br>
+    <a href="https://www.naver.com">NAVER</a>
+</body>
+</html>

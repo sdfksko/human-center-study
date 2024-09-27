@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="textContent"></p>
+    <p id="innerText"></p>
+    <p id="innerHTML"></p>
+    <script>
+        const el1 = document.querySelector('#textContent');
+        // 컨텐츠 글자 변경
+        el1.textContent = `<strong>textContent</strong> 속성`;
+        
+        // 스타일 조정하기
+        el1.style.color = 'red';
+        el1.style.fontSize = '30px'; // font-size -> X
+        el1.style.backgroundColor = '#135313'; // background-color -> X
+
+        document.querySelector('#innerText').innerText = `<strong>innerText</strong> 속성`;
+        document.querySelector('#innerHTML').innerHTML = `<strong>innerText</strong> 속성`;
+    </script>
+</body>
+</html>

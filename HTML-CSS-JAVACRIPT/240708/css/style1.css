@@ -1,0 +1,69 @@
+body{
+    /* height: 4000px; */
+    margin: 0px;
+    padding: 0px;
+    position: static;
+}
+.wrapper{
+    width: 400px;
+    height: 400px;
+    background-color: purple;
+    /* position: relative; */
+    /* overflow-y: visible; */
+}
+.bluebox{
+    background-color: royalblue;
+    width: 300px;
+    height: 300px;
+    /* height: 2000px; */
+    position: relative;
+}
+.orangebox{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    z-index: 999;
+}
+.orangebox2{
+    background-color: orange;
+    width: 140px;
+    height: 90px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    /* bottom: 30px; */
+    /* right: 30px; */
+    z-index: 1;
+}
+.orangebox3{
+    background-color: chocolate;
+    width: 70px;
+    height: 130px;
+    position: absolute;
+    bottom: 120px;
+    right: 100px;
+    z-index: 2;
+}
+
+.box {
+    width: 100px;
+    height: 100px;    
+    position: relative;
+}
+.red-box {
+    background-color: red;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+.green-box {
+    background-color: green;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.blue-box {
+    background-color: blue;
+}

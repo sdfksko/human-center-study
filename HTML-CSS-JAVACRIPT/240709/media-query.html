@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400x;
+            height: 400px;
+            /* background-color: orange; */
+        }
+        /* 스크린에서 최소 가로너비 1201px이상인 것에 css적용 */
+        @media screen and (min-width: 1201px) {
+            div {
+                background-color: red;
+            }
+        }
+
+        /* 스크린에서 너비가 500px과 1200px사이의 것에 css적용(tablet화면) */
+        @media (min-width: 500px) and (max-width: 1200px) {
+            div {
+                background-color: pink;
+            }
+        } 
+       
+        /* 스크린에서 최대 가로너비 499px이하인 것에 css 적용(mobile화면) */ 
+        @media (max-width: 499px) {
+            div {
+                background-color: royalblue;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

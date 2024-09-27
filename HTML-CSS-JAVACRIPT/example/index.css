@@ -1,0 +1,243 @@
+header{
+    height: 90px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    
+}
+header .container{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    height: 100%;
+}
+/* color:rgb(136,136,136) */
+/* .logo{
+    border: 1px solid white;
+    } */
+.logo img{
+    display: block;
+    margin-top: 25px;
+}
+.left{
+    position: relative;
+    width: 45%;
+    height: 100%;
+}
+.sup .sup-title{
+    display: flex;
+    font-size: .8667em;
+    padding: 0;
+}
+.sup .sup-title a:hover{
+    text-decoration: underline;
+}
+.sup .sup-title a{
+    color:black;
+
+}
+.sup .sup-title>li{
+    padding: 7px 8px 0 5px;
+    font-size: 13px;
+}
+.sub .sub-title{
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    padding: 0;
+    margin:0;
+    bottom:0;
+    font-family: NanumBarunGothic, Dotum, '돋움', sans-serif;
+}
+.sub .sub-title img{
+    width: 30px;
+    cursor: pointer;
+}
+.left .sub .sub-title .sup-content{
+    font-size: 1.25em;
+    font-weight: 500;
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+.left .sub-title{
+    left:0;
+}
+.sup-list-content{
+    position: absolute;
+    /* display: flex; */
+    display: none;
+    width: 100%;
+    padding: 0;
+    top: 68px;
+}
+.sup-list-content a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+.sup-list-content a:hover{
+    text-decoration: underline;
+}
+.left .sub-title>li:first-child{
+    padding: 10px 10px 10px 0;
+}
+.left .sub-title>li:nth-child(2){
+    padding: 10px 50px 10px 0;
+}
+.right{
+    position: relative;
+    width: 45%;
+    height: 100%;
+}
+.right .sup-title{
+    position: absolute;
+    right:0;
+}
+.right .sub-title{
+    position: absolute;
+    right:0;
+}
+.right .sub-title>li>.sup-content{
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: 500;
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 15px 35px;
+}
+.right .sub-title .sup-content{
+    font-family: "Noto Sans KR", sans-serif;
+}
+.right .sub-title img{
+    width: 30px;
+}
+.right .sub-title>li:nth-child(4){
+    padding: 10px 0 10px 40px;
+}
+.right .sub-title>li:nth-child(5){
+    padding: 10px 0 10px 10px;
+}
+.header-wrapper{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(51,158,178);
+    position: absolute;
+    display: none;
+    top: 90px;
+}
+li{
+    list-style-type: none;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #f1ebeb;
+    
+}
+.footer-container{
+    position: relative;
+    width: 1150px;
+    margin: auto;
+    
+}
+footer .footer-top{
+    display: flex;
+    position: absolute;
+    left:10px;
+    top:20px;
+}
+.footer-top .item{
+    padding: 10px 10px 10px 0;
+    font-size: 12.5px;
+}
+.footer-top .item a{
+    color:black;
+}
+.footer-top .item:nth-child(7){
+    font-weight: bold;
+}
+.footer-bottom{
+    position: absolute;
+    top:100px;
+    left:10px;
+    display: flex;
+    column-gap: 15px;
+}
+.footer-bottom .footer-bottom-text{
+    font-size: 14px;
+}
+.footer-bottom-sns{
+    width: 200px;
+}
+footer .wrapper{
+    width: 90%;
+    margin: auto;
+    height: 70px;
+    position: relative;
+}
+.wrapper ul{
+    display: flex;
+    position: absolute;
+    bottom:0;
+}
+.wrapper li{
+    padding: 10px;
+    color: #666;
+    font-size: .8em;
+}
+.menu-wrapper{
+    width: 88%;
+    height: 100%;
+    margin: auto;
+}
+.menu-container{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    top:90px;
+    background-color: rgb(51,51,51);
+    display: none;
+    z-index: 1;
+}
+.menu-header{
+    padding: 20px;
+    font-size: 1.52em;
+    color:white;
+    margin-left: 50px;
+    line-height: 70px;
+    height: 40px;
+}
+.menu-container .menu-main{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: 200px;
+    column-gap: 10px;
+    row-gap:40px;
+    margin-top: 30px;
+}
+.menu-main h2{
+    font-size: 1em;
+    border-bottom: 1px solid rgb(60,60,60);
+    border-top: 1px solid rgb(60,60,60);
+    padding: 10px;
+    color:white;
+}
+.menu-container .menu-main .item{
+    text-align: center;
+}
+.menu-container .menu-main .item:nth-child(6){
+    grid-row: 1/ span 2;
+    grid-column: 6 / span 2;
+}
+.menu-main .item ul{
+    padding: 7px 0;
+}
+.menu-main .item li{
+    color:rgb(187,187,187);
+    padding:10px;
+    font-size: 13.5px;
+}

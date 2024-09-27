@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forms_element</title>
+  <script>
+
+  </script>
+</head>
+<body>
+  <form name="frm1">
+    <label for="uname">이름</label>
+    <input type="text" id="uname" name="uname">
+    <label for="age">나이</label>
+    <input type="text" id="age" name="age">
+    <label for="gender">성별</label>
+    <select id="gender" name="gender" style="width: 150px;">
+      <option value="male">male</option>
+      <option value="female">female</option>
+    </select>
+    
+    <label for="memo">메모</label>
+    <textarea name="memo"></textarea>
+
+    <label><input type="checkbox" value="apple">사과</label>
+    <label><input type="checkbox" value="banana">바나나</label>
+    <label><input type="checkbox" value="orange">오렌지</label>
+    <label><input type="checkbox" value="melon">멜론</label>
+    <br>
+    <label><input type="radio" name="fruits" value="apple" checked>사과</label>
+    <label><input type="radio" name="fruits" value="banana" >바나나</label>
+    <label><input type="radio" name="fruits" value="orange" checked>오렌지</label>
+    <label><input type="radio" name="fruits" value="melon">멜론</label>
+    <br>
+    <select name="selectFruits">
+      <option value="apple">사과</option>
+      <option value="banana">바나나</option>
+      <option value="orange">오렌지</option>
+      <option value="melon">멜론</option>
+  </select>
+  <br>
+  <input type="file" name="upload">
+    <button type="submit">전송</button>
+    
+  </form>
+  <form name="frm2">
+
+  </form>
+  <script>
+    console.log(document.frm1.elements[0]); // <input type="text" id="uname" name="uname">
+    console.log(document.frm1.elements['uname']); // <input type="text" id="uname" name="uname">
+    console.log(document.frm1.uname); // <input type="text" id="uname" name="uname">
+    console.log(document.forms[0].uname); // <input type="text" id="uname" name="uname">
+
+    // 텍스트박스 값 설정
+    document.frm1.uname.value = '홍길동';
+    document.frm1.age.value = 30;
+    document.frm1.memo.value = '안녕하세요. 반갑';
+
+    // 체크박스 값 설정
+    const checkboxEls = document.querySelectorAll('[type="checkbox"]');
+    checkboxEls.forEach(checkboxEl => {
+      checkboxEl.checked = true;
+    });
+
+    // 라디오박스 값 설정
+    const radioboxEls = document.querySelectorAll('[type="radio"]');
+    radioboxEls.forEach(radioEl => {
+      // if(radioEl.checked) {
+      //     console.log(radioEl.value);
+      // }
+      if(radioEl.value === 'melon') {
+        radioEl.checked = true;g
+      }
+    });
+
+    // 콤보박스(selectbox) 값 설정
+    const selectOptionEls = document.querySelectorAll('option');
+    selectOptionEls.forEach(selectOptionEl => {
+      // if(selectOptionEl.selected = true) {
+      //   console.log(selectOptionEl.value);
+      // }
+      
+      if(selectOptionEl.value === 'orange') {
+        selectOptionEl.selected = true;
+      }
+    })
+
+    // 파일 업로드 값 설정
+    const files = document.frm1.upload.files;
+    console.log(files);
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red--color {
+            color: red;
+            background-color: black;
+        }
+        .fz30 {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p id="text">text</p>
+    <script>
+        const pEl = document.querySelector('#text');
+        // pEl.classList.add('red--color');
+        // pEl.classList.add('fz30');
+        pEl.classList.add('red--color', 'fz30');
+
+        pEl.classList.remove('red--color', 'fz30');
+
+        // toggle: add와 remove를 번갈아가며 실행
+        pEl.classList.toggle('red--color'); // add
+        pEl.classList.toggle('red--color'); // remove
+
+        // 1초마다 toggle 실행
+        setInterval(() => {
+            pEl.classList.toggle('red--color');
+        }, 1000);
+    </script>
+</body>
+</html>

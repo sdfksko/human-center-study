@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>클릭(프로퍼티 리스너)</button>
+    <button>클릭(이벤트 등록 리스너)</button>
+    <script>
+        // 프로퍼티 리스너 방식으로 이벤트 등록
+        const buttonEl = document.querySelector('button');
+        buttonEl.onclick = function(){
+            alert('클릭됨');
+        }
+
+        // 이벤트 등록 방식으로 이벤트 등록
+        const buttonEl2 = document.querySelectorAll('button')[1];
+        buttonEl2.addEventListener('click', function(){
+            alert('클릭됨2');
+        });
+        const clickEvent3 = () => {
+            alert('클릭됨3');
+        }
+        buttonEl2.addEventListener('click', clickEvent3);   // 위와 같은 방식
+    </script>
+</body>
+</html>

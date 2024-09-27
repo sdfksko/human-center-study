@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="timetable">
+	<select id="selectMovieName" parameterType="hashmap" resultType="TimeTableDTO">
+		select * from timetable where movie_idx=#{movie_idx} and location_name=#{location_name} and room_location=#{room_location} and to_char(start_time,'MM-dd')=#{start_time} order by room_location,start_time
+	</select>
+	<!-- 해당 극장의 영화번호와 상영관(Room_location) 구하는 메서드 -->
+	<select id="selectTheaterFirst" parameterType="String" resultType="TimeTableDTO">
+		select movie_idx from timetable where location_name=#{location_name} group by movie_idx
+	</select>
+	<!-- 중복제거된 리스트에서 각 영화에 맞게 출력? -->
+	<select id="selectTheaterSecond" parameterType="hashmap" resultType="TimeTableDTO">
+		SELECT ROOM_LOCATION FROM TIMETABLE t WHERE LOCATION_NAME ='군자' AND MOVIE_IDX =1 GROUP BY ROOM_LOCATION order by room_location
+	</select>
+</mapper>

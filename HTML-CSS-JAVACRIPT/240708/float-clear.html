@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            background-color: #ccc;
+            border: 1px solid black;
+            padding: 1rem;
+            margin: 0 auto; /* 부모 크기 요소 기준으로 가로 중앙정렬 하는 방법 */
+        }
+        .container::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .red-box{
+            background-color: red;
+            float: left;
+        }
+        /* .green-box{
+            background-color: green;
+            float: left;
+        } */
+        .blue-box{
+            background-color: blue;
+            /* clear: both; */
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red-box">1</div>
+        <!-- <div class="box green-box"></div> -->
+        <div class="box blue-box">2</div>
+        <div class="box blue-box">3</div>
+        <div class="box blue-box">4</div>
+        <div class="box blue-box">5</div>
+        <div class="box blue-box">6</div>
+        <div class="box blue-box">7</div>
+        <div class="box blue-box">8</div>
+        <div class="box blue-box">9</div>
+        <div class="box blue-box">10</div>
+        <div class="box blue-box">11</div>
+    </div>
+    <div class="box red-box">1</div>
+    <!-- <div class="box green-box"></div> -->
+    <div class="box blue-box">2</div>
+    <div class="box blue-box">3</div>
+    <div class="box blue-box">4</div>
+    <div class="box blue-box">5</div>
+    <div class="box blue-box">6</div>
+    <div class="box blue-box">7</div>
+    <div class="box blue-box">8</div>
+    <div class="box blue-box">9</div>
+    <div class="box blue-box">10</div>
+    <div class="box blue-box">11</div>
+</body>
+</html>

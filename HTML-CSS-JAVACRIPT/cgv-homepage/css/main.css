@@ -1,0 +1,170 @@
+header {
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header .top-view{
+    background-color: rgb(24, 40, 96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .top-view a{
+
+}
+
+header .top-view a img {
+
+}
+
+header .middle-menu {
+    width: 980px;
+    height: 130px;
+    margin: 0 auto;
+    /* background-color: orange; */
+    position: relative;
+}
+
+header .middle-menu .cgv-logo {
+    position: absolute;
+    top: 40px;
+}
+
+header .middle-menu .cgv-logo a {
+
+}
+
+header .middle-menu .cgv-logo a img {
+    width: 120px;
+}
+
+header .middle-menu .cgv-text {
+    display: flex;
+    position: absolute;
+    top: 75px;
+    left: 120px;
+}
+
+header .middle-menu .cgv-text p {
+    margin-right: 25px;
+}
+
+header .middle-menu .m-card {
+    position: absolute;
+    top: 55px;
+    left: 520px;
+}
+
+header .middle-menu .m-card a{
+
+}
+
+header .middle-menu .m-card a img{
+
+}
+
+header .middle-menu .login-menu {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+header .middle-menu .login-menu p {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+}
+
+header .middle-menu .login-menu .sign-in {
+    margin-right: 30px;
+}
+
+header .middle-menu .login-menu .sign-in a{
+
+}
+
+header .middle-menu .login-menu .sign-in a img{
+    width: 50px;
+}
+
+header .middle-menu .login-menu .sign-in a p{
+
+}
+
+header .middle-menu .login-menu .sign-up {
+    margin-right: 30px;
+}
+
+header .middle-menu .login-menu .sign-up a{
+
+}
+
+header .middle-menu .login-menu .sign-up a img{
+    width: 50px;
+}
+
+header .middle-menu .login-menu .sign-up a p{
+    
+}
+
+header .middle-menu .login-menu .MY_CGV {
+    margin-right: 30px;
+}
+
+header .middle-menu .login-menu .MY_CGV a{
+
+}
+
+header .middle-menu .login-menu .MY_CGV a img{
+    width: 50px;
+}
+
+header .middle-menu .login-menu .MY_CGV a p{
+    
+}
+
+header .middle-menu .login-menu .call-center {
+
+}
+
+header .middle-menu .login-menu .call-center a{
+
+}
+
+header .middle-menu .login-menu .call-center a img{
+    width: 50px;
+}
+
+header .middle-menu .login-menu .call-center a p{
+    
+}
+
+header .bottom-menu{
+    
+}
+
+header .bottom-menu .items {
+    display: flex;
+    jus
+}
+
+header .bottom-menu .items .item {
+
+}
+
+header .search-box{
+
+}
+
+header .search-box .text{
+
+}
+
+header .search-box .material-symbols-outlined{
+
+}

@@ -1,0 +1,244 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    height: 2000px;
+    line-height: 1.4;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    background-color: #f6f5f0;
+    border-bottom: 1px solid #c8c8c8;
+    position: fixed;
+}
+
+header > .inner {
+    height: 120px;
+}
+
+header .logo {
+    height: 75px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto 0;
+    /* display: none; */
+}
+
+header .sub-menu {
+    display: flex;
+    /* justify-content: flex-end; */
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+header .sub-menu ul.menu{
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+header .sub-menu ul.menu li {
+    /* background-color: red; */
+    position: relative;
+}
+
+header .sub-menu ul.menu li::before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #e5e5e5;
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+header .sub-menu ul.menu li:first-child::before {
+    display: none;
+}
+
+header .sub-menu ul.menu li a{
+    color: #656565;
+    /* background-color: red; */
+    font-size: 12px;
+    padding: 11px 16px;
+    display: block;
+}
+
+header .sub-menu ul.menu li a:hover {
+    color: #000;
+}
+
+header .sub-menu .search {
+    /* background-color: red; */
+    height: 34px;
+    position: relative;
+}
+
+header .sub-menu .search input {
+    width: 36px;
+    height: 34px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 4px 10px;
+    outline: none;
+    font-size: 12px;
+    transition: width .5s;
+}
+
+header .sub-menu .search input:focus {
+    width: 190px;
+    border-color: green;
+}
+
+header .sub-menu .search .material-symbols-outlined {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height:24px;
+    right: 5px;
+}
+
+header .main-menu {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+header .main-menu .item {
+
+} 
+
+header .main-menu .item .item_name {
+    padding: 10px 20px 34px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+header .main-menu .item:hover .item_name {
+    color: green;
+    background-color: #2c2a29;
+    border-radius: 6px 6px 0 0;
+}
+
+header .main-menu .item .item_contents {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    display: none;
+}
+
+header .main-menu .item:hover .item_contents {
+    display: block;
+}
+
+header .main-menu .item .item_contents .contents_menu {
+    background-color: #2c2a29;
+}
+
+header .main-menu .item .item_contents .contents_menu > ul {
+    display: flex;
+    padding: 20px 0;;
+}
+
+header .main-menu .item .item_contents .contents_menu > ul > li {
+    width: 220px;
+}
+
+header .main-menu .item .item_contents .contents_menu > ul > li > h4{
+    padding: 3px 0 12px 0;
+    font-size: 14px;
+    color: white;
+}
+
+header .main-menu .item .item_contents .contents_menu > ul > li ul {
+
+}
+
+header .main-menu .item .item_contents .contents_menu > ul > li ul li {
+    padding: 5px 0;
+    font-size: 12px;
+    color: #999;
+    cursor: pointer;
+}
+
+header .main-menu .item .item_contents .contents_texture {
+    background-image: url(../../images/starbucks/main_menu_pattern.jpg);
+    height: 100px;
+    font-size: 12px;
+    padding: 26px 0;
+}
+
+header .main-menu .item .item_contents .contents_texture h4{
+    color: #999;
+    font-weight: 700;
+}
+
+header .main-menu .item .item_contents .contents_texture p {
+    color: green;
+    margin: 4px 0 14px;
+}
+
+header .badges {
+    position: absolute;
+    right: 12px;
+    top: 132px;
+}
+
+header .badges .badge {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0, .15);
+    cursor: pointer;
+}
+
+section {
+    height: 400px;
+}
+
+section.visual1 {
+    background-color: orange;
+    /* position: relative;
+    z-index: 1; */
+    /* margin-top: 120px; */
+}
+ 
+section.visual2 {
+    background-color: red;
+}
+
+section.visual3 {
+    background-color: blue;
+}
+
+section.visual4 {
+    background-color: yellow;
+}
+
+section.visual5 {
+    background-color: pink;
+}
+
+section.visual6 {
+    background-color: green;
+}

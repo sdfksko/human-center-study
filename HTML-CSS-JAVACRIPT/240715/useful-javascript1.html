@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = null;
+        if (!person){
+            console.log('person이 없습니다')
+        }
+
+        // Truthy and Falsy 기능
+        console.log(!3);
+        console.log(!'hello');
+        console.log(!['array?']);
+        console.log(![]);
+        console.log(!{ value: 1 });
+
+        // 단축 평가 논리계산법
+        console.log(true && 'hello'); // hello
+        console.log(false && 'hello'); // false
+
+        
+        const namelessDog = {
+        name: ''
+        };
+
+        function getName(animal) {
+            const name = animal && animal.name;
+            return name || '이름이 없는 동물입니다.';
+        }
+        const name = getName(namelessDog);
+        console.log(name); // 이름이 없는 동물입니다.
+
+        // 함수의 기본 파라미터
+        function calculateCircleArea(r = 1) {
+            return Math.PI * r * r;
+        }
+        const area = calculateCircleArea();
+        console.log(area);
+
+        // 조건문 더 스마트하게 쓰기
+        function getSound(animal) {
+            const sounds = {
+                개: '멍멍!',
+                고양이: '야옹~',
+                참새: '짹짹',
+                비둘기: '구구 구 구'
+            };
+            return sounds[animal] || '...?';
+        }
+
+        console.log(getSound('개')); // 멍멍!
+        console.log(getSound('비둘기')); // 구구 구 구
+
+        // 함수 객체일 경우
+        function makeSound(animal) {
+            const tasks = {
+                개() {
+                    console.log('멍멍');
+                },
+                고양이() {
+                    console.log('고양이');
+                },
+                비둘기() {
+                    console.log('구구 구 구');
+                }
+            };
+            if (!tasks[animal]) {
+                console.log('...?');
+                return;
+            }
+            tasks[animal]();
+        }
+
+        makeSound('개');
+        makeSound('비둘기');
+    </script>
+</body>
+</html>

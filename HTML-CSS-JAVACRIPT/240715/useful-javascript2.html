@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const object = { a: 1 };
+        const { a, b = 3 } = object;
+
+        function print({ a, b = 2 }) {
+            console.log(a);
+            console.log(b);
+        }
+        print(object);
+
+        // 비구조화 할당시 이름 바꾸기
+        const animal = {
+            name: '멍멍이',
+            type: '개'
+        };
+
+        const { name: nickname } = animal; // name을 nickname으로 바꿈
+        console.log(nickname);
+
+        // 배열 비구조화 할당
+        const array = [1, 2];
+        const [one, two] = array;
+
+        console.log(one);
+        console.log(two);
+
+        // 깊은 값 비구조화 할당
+        const deepObject = {
+            state: {
+                information: {
+                    name: 'velopert',
+                    languages: ['korean', 'english', 'chinese']
+                }
+            },
+            value: 5
+        };
+        const { name, languages } = deepObject.state.information;
+        const { value } = deepObject;
+
+        const extracted = {
+            name,
+            languages,
+            value
+        };
+        console.log(extracted); // {name: "velopert", languages: Array[3], value: 5}
+
+        // spread연산자 사용
+            
+        const slime = {
+        name: '슬라임'
+        };
+
+        const cuteSlime = {
+        ...slime,
+        attribute: 'cute'
+        };
+
+        const purpleCuteSlime = {
+        ...cuteSlime,
+        color: 'purple'
+        };
+
+        console.log(slime);
+        console.log(cuteSlime);
+        console.log(purpleCuteSlime);
+
+        // spread연산자 사용(배열)
+        const animals = ['개', '고양이', '참새'];
+        const anotherAnimals = [...animals, '비둘기'];
+        console.log(anotherAnimals)
+
+        // 배열에서 spread 연산자를 여러번 사용
+        const numbers = [1,2,3,4,5];
+
+        const spreadNumbers = [...numbers, 1000, ...numbers];
+        console.log(spreadNumbers);
+
+        // 객체에서의 ...(rest연산자)
+
+        // const purpleCuteSlime = {
+        // name: '슬라임',
+        // attribute: 'cute',
+        // color: 'purple'
+        // };
+
+        const { color, ...rest } = purpleCuteSlime;
+        console.log(color);
+        console.log(rest);
+
+        const { attribute, ...abc2 } = cuteSlime;
+        console.log(attribute);
+        console.log(abc2);
+
+        const numbers2 = [0, 1, 2, 3, 4, 5, 6];
+        const [one2, ...rest2] = numbers2;
+
+        console.log(one2);
+        console.log(rest2);
+
+        function sum(...rest) {
+            return rest.reduce((acc, current) => acc + current, 0);
+        }
+        console.log(sum(1,2,3,4));
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="notice">
+	<select id="selectAll" parameterType="hashmap" resultType="NoticeDTO">
+		select row_number() over (order by idx) as row_num,idx,name,category,title,regdate from notice where
+		 <choose>
+		 	<when test="type=='megabox'">name='메가박스'</when>
+		 	<when test="type=='other'">name !='메가박스'</when>
+		 	<otherwise>1=1</otherwise>
+		 </choose>
+		 <if test="title!='' and title!=null">and title like concat('%',#{title},'%')</if>  
+		 order by idx desc limit #{startNo},#{size}
+	</select>
+	
+	<select id="selectCount" parameterType="hashmap" resultType="int">
+		select count(*) from notice  where 
+		<choose>
+		 	<when test="type=='megabox'">name='메가박스'</when>
+		 	<when test="type=='other'">name !='메가박스'</when>
+		 	<otherwise>1=1</otherwise>
+		 </choose> 
+		 <if test="title!='' and title!=null">and title like concat('%',#{title},'%')</if>
+	</select>
+	
+	<select id="selectByIdx" parameterType="int" resultType="NoticeDTO">
+		select * from notice where idx=#{idx}
+	</select>
+	
+	<select id="selectPrevAndNext" parameterType="hashmap" resultType="NoticeDTO">
+		select * from notice where <if test="type=='plus'">idx=#{idx}+1</if>
+		<if test="type=='minus'">idx=#{idx}-1</if>
+	</select>
+</mapper>
+
+
+
+
+
+<div class="title">강남</div>
+		        <div class="theater-box">
+		            <div class="theater-type">
+		                <div class="theater-name">1관</div> 
+		                <div class="chair">총 232석</div>
+		            </div>
+		            <div class="theater-area">
+		                <div class="item">
+		                    2D(자막)
+		                </div>
+		                <div class="item">
+		                    <div class="item-wrapper">
+		                        <div>15:00~17:00</div>
+		                        <div>3회차</div>
+		                    </div>
+		                    <div class="item-box">
+		                        <div class="start-time">15:00</div>
+		                        <div class="remain-chair">220석</div>
+		                    </div>
+		                </div> 
+		                <div class="item">
+		                    <div class="start-time">17:35</div>
+		                    <div class="remain-chair">220석</div>
+		                </div> 
+		                <div class="item">
+		                    <div class="start-time">20:10</div>
+		                    <div class="remain-chair">220석</div>
+		                </div> 
+		            </div>
+		        </div>
+
+
+
+
+<div class="main-item">
+    <div class="main-img">
+        <img src="https://img.megabox.co.kr/SharedImg/2024/07/04/yKz9lWmAB90In1nFsSBsNXaPVOAoWgha_420.jpg" alt="">
+        <div class="movie_hidden">
+            <div class="text"></div>
+            <div class="sub-text"></div>
+            <div class="rate">관람평</div>
+        </div>
+    </div>
+    <div class="movie_button">
+        <button type="button" class="btn btn-dark movie_like"><img src="${pageContext.request.contextPath }/static/images/favorite.svg" alt="">692</button>
+        <button class="movie_reserve btn2 ">예매</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ let cinemaData ;
+    let a = document.querySelector(".timetable .item.selected .top");
+    let time = a.textContent.split('.');
+    let hour = String(time[0]).padStart(2,"0");
+    let min = String(time[1]).padStart(2,"0");
+    let d = hour+"-"+min;
+    let res = $("<div></div>");
+    await axios.get('cinemaLocationName.jsp?locationName='+content)
+    .then(response=>{
+        cinemaData=response.data;
+    })
+    .catch(error=>console.log(error))
+    cinemaData.forEach(item=>{
+        const container = $("<div class='theater-location'></div>");
+        let title = $("<div class='title'>"+item.location_name+"</div>");
+        let theaterBox = $("<div class='theater-box'></div>");
+        container.append(title);
+        theaterBox.append($("<div class='theater-type'><div class='theater-name'>"+item.room_location+"</div><div class='chair'>총 232석</div></div>"));
+        let theaterArea = $("<div class='theater-area'></div>");
+        theaterBox.append(theaterArea);
+        
+        axios.get(`selectMovieName.jsp?location_name=${item.location_name}&movie_idx=${item.movie_idx}&room_location=${item.room_location}&time=${d}`)
+        .then(response=>{
+            let result = response.data;
+            theaterArea.append($("<div class='item'>2D(자막)</div>"));
+            result.forEach(it=>{
+		        date = new Date(it.start_time);
+                theaterArea.append($("<div class='item'><div class='item-box'><div class='start-time'>"+String(date.getHours()).padStart(2,"0")+":"+String(date.getMinutes()).padStart(2,"0")+"</div><div class='remain-chair'>220석</div></div></div>"));
+            })
+            container.append(theaterBox);
+            res.append(container);
+            $(".theater-location").html(res);
+        })
+        .catch(error=>console.log(error))
+    })

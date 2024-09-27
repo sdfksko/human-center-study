@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /* 
+            - span(display가 inline)의 특징
+                1. 줄바꿈 x
+                2. 포함한 컨텐츠 크기만큼 가로,세로가 자동으로 줄어듬
+                3. width, height값이 적용이 x
+
+            - div(display가 block)의 특징
+                1. 줄바꿈 o
+                2. 가로는 부모 요소의 크기만큼 자동으로 늘어나고 세로는 부모 요소의 크기만큼 자동으로 줄어듬
+        
+            - display가 inline-block의 특징
+                1. 줄바꿈 x
+                2. 포함한 컨텐츠 크기만큼 가로,세로가 자동으로 줄어듬
+                3. width, height값이 적용이 됨
+        */
+        .inlineblock{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div style="display:inline; width:100px; height: 100px; margin: 20px 20px; background-color: orange;">Hello</div>
+    <div style="display:inline; margin: 20px 20px; padding: 20px 20px;">World</div>
+    <br>
+    <span style="display:block; width:300px; height: 100px; background-color: blueviolet;">Hello</span>
+    <span style="display:block;">World</span>
+    <br><br>
+    <div class="inlineblock">Hello</div>
+    <div class="inlineblock">World</div>
+    <br><br>
+    <div style="width: 400px; height: 400px; background-color: red;">
+        <div style="width: 200px; height: 200px; background-color: orange;">Hello World</div>
+    </div>
+</body>
+</html>

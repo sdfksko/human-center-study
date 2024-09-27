@@ -1,0 +1,243 @@
+.sub_tit_wrap {
+    margin-top: 120px;
+}
+/* .sub_tit_wrap .sub_tit_inner {
+	
+} */
+.sub_tit_wrap .sub_tit_inner h2 {
+	padding: 30px 0;
+}
+.sub_tit_wrap .sub_tit_inner ul.smap {
+	display: flex;
+	justify-content: flex-end;
+}
+.sub_tit_wrap .sub_tit_inner ul.smap li {
+	font-size: 12px;
+	margin-right: 10px;
+}
+.sub_tit_wrap .sub_tit_inner ul.smap li a {
+	color: #000;	
+}
+.sub_tit_wrap .sub_tit_inner ul.smap li a:hover{
+	text-decoration: underline;	
+}
+
+.news_sch_wrap {
+	display: flex;
+	justify-content: flex-end;
+	margin: 18px 0;
+	background-color: rgb(244,244,242);
+	padding: 20px;
+}
+.news_sch_wrap .sch_items {
+	display: flex;	
+}
+.news_sch_wrap #sch_bar {
+	width: 323px;
+	/* outline: none; */
+	padding-left: 20px;
+	border: 1px solid rgb(221,221,221);
+	margin-right: 10px;
+	border-radius: 5px;
+	background-color: white;
+	box-sizing: border-box;
+	letter-spacing: -2px;
+}
+.news_sch_wrap a.new-board-search-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 54px;
+	height: 38px;
+	flex-shrink: 0;
+	border-radius: 3px;
+	background-color: #777;
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 900;
+}
+
+/* 공지사항 게시글 박스 스타일 */
+.notice__list {
+	margin-top: 34px;
+}
+.notice__list .notice_header {
+	width: 100%;
+	display: flex;
+	padding: 20px 0;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+}
+.notice__list .notice_header .notice_no,
+.notice__list .notice_header .notice_title,
+.notice__list .notice_header .notice_regdate,
+.notice__list .notice_header .notice_hit {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 900;
+	letter-spacing: -1px;
+}
+.notice__list .notice_header .notice_no {
+	width: 10%;
+}
+.notice__list .notice_header .notice_title {
+	width: 76%;
+}
+.notice__list .notice_header .notice_regdate {
+	width: 12%;
+}
+.notice__list .notice_header .notice_hit {
+	width: 12%;
+}
+
+.notice__list .notice__list__items {
+}
+.notice__list .notice__list__items ul {
+	display: flex;
+	width: 100%;
+}
+.notice__list .notice__list__items ul li {
+	padding: 12px 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e5e5e5;
+}
+.notice__list .notice__list__items ul li:nth-child(1) {
+	width: 10%;
+	text-align: center;
+}
+.notice__list .notice__list__items ul li:nth-child(2) {
+	padding-left: 20px;
+	width: 76%;
+}
+.notice__list .notice__list__items ul li:nth-child(2) a {
+	color: #000;
+	text-decoration: none; 
+}
+.notice__list .notice__list__items ul li:nth-child(2) a:hover {
+	text-decoration: underline;
+}
+.notice__list .notice__list__items ul li:nth-child(3) {
+	width: 12%;
+	text-align: center;
+}
+.notice__list .notice__list__items ul li:nth-child(4) {
+	width: 12%;
+	text-align: center;
+}
+
+
+
+
+/* 공지사항 상세글 박스 스타일 */
+.notice__detail {
+	margin-top: 34px;
+}
+.notice__detail .notice_detail_header {
+	width: 100%;
+	display: flex;
+	padding: 20px 0;
+	justify-content: space-between;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+}
+.notice__detail .notice_detail_header .notice_detail_title,
+.notice__detail .notice_detail_header .notice_detail_title_icon {
+	font-size: 18px;
+	font-weight: 900;
+}
+.notice__detail .notice_detail_header .notice_detail_title {
+	/* background-color: orange; */
+	/* text-align: left; */
+	margin-left: 30px;
+}
+.notice__detail .notice_detail_header .notice_detail_title_icon {
+	/* background-color: royalblue; */
+	/* text-align: right; */
+	margin-right: 30px;
+}
+.notice__detail .notice_detail_content {
+	padding: 20px 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e5e5e5;
+}
+.notice__detail .notice_detail_list_btn {
+	display: flex;
+	justify-content: flex-end;
+}
+.notice__detail .notice_detail_list_btn a.notice-list-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 45px;
+	flex-shrink: 0;
+	border-radius: 3px;
+	background-color: #777;
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 900;
+	margin-top: 20px;
+	
+}
+
+.notice_detail_bottom {
+	margin-top: 122px;
+	margin-bottom: 60px;
+	/* margin: 121px 0; */
+}
+.sub_detail_btm {
+	/* padding: 70px 0; */
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+}
+.sub_detail_btm .bottom__prev, 
+.sub_detail_btm .bottom__next {
+	display: flex;
+	height: 50px;
+	font-size: 14px;
+	align-items: center;
+	position: relative;
+}
+.sub_detail_btm .bottom__prev {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e5e5e5;
+}
+.sub_detail_btm .bottom__next  {
+	
+}
+.sub_detail_btm .nd_btm_left,
+.sub_detail_btm .nd_btm_right {
+	padding-left: 20px;
+}
+.sub_detail_btm .nd_btm_left  {
+	width: 13.5vw;
+	font-weight: bold;
+	height: 50px;
+	background-color: rgb(244,244,242);
+	display: flex;
+ 	align-items: center;
+ 	/* font-family: 'Apple SD Gothic Neo', 'NotoSans', '-apple-system', sans-serif; */
+ 	font-size: 14px;
+ 	color: #222222;
+}
+.sub_detail_btm .nd_btm_right  {
+	width: auto;
+	color: #666;
+}

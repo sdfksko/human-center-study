@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 5000px;
+            height: 5000px;
+        }
+        div{
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="sTo()">scrollTo(100, 200)</button>
+        <button onclick="sBy()">scrollBy(100, 200)</button>
+    </div>
+    <script>
+        function sTo() {
+            window.scrollTo(100, 200); // 왼쪽 100px, 위쪽 200px 위치로 이동
+            // window.scrollTo({left:100, top:200, behavior: });
+        }
+
+        function sBy() {
+            window.scrollBy(100, 200); // 현재위치에서 왼쪽 100px, 위쪽 200px 위치로 이동
+            // window.scrollBy({left:100, top:200});
+        }
+    </script>
+</body>
+</html>
