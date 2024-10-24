@@ -1,0 +1,789 @@
+.selected {
+    background-color: #333;
+    color: #fff;
+}
+
+main {
+    
+}
+
+main .box {
+    width: 1100px;
+    height: 900px;
+    margin: 0 auto;
+    position: relative;
+    top: 45px;
+}
+
+main .box > h1 {
+    position: absolute;
+    top: 50px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+main .box .ticketing-container {
+    width: 100%;
+    height: 580px;
+    position: absolute;
+    top: 110px;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: rgb(216, 217, 219);
+}
+
+main .box .ticketing-container .ticketing-select {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid rgb(216, 217, 219);
+}
+
+main .box .ticketing-container .ticketing-select .swiper-container{
+    width: 88%;
+    height: 100%;
+    display: flex;
+}
+
+main .box .ticketing-container .ticketing-select .swiper-prev {
+    width: 4%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(157, 157, 157);
+    cursor: pointer;
+    z-index: 2;
+}
+
+main .box .ticketing-container .ticketing-select .swiper-container .swiper-wrapper {
+    width: 88%;
+    height: 100%;
+    display: flex;
+}
+
+main .box .ticketing-container .ticketing-select .swiper-container .swiper-wrapper .swiper-slide {
+    width: 120px;
+    height: 100%;
+    display: flex;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+main .box .ticketing-container .ticketing-select .swiper-container .swiper-wrapper .swiper-slide:hover {
+    border-bottom: 3px solid blueviolet;
+}
+
+main .box .ticketing-container .ticketing-select .swiper-container .swiper-wrapper .swiper-slide p {
+    display: flex;
+    align-items: center;
+}
+
+main .box .ticketing-container .ticketing-select .swiper-next {
+    width: 4%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(157, 157, 157);
+    cursor: pointer;
+    z-index: 1;
+}
+
+main .box .ticketing-container .ticketing-select .date-image {
+    width: 4%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgb(216, 217, 219);
+}
+
+main .box .ticketing-container .menu {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+main .box .ticketing-container .menu .movie-menu {
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
+main .box .ticketing-container .menu .movie-menu > h1 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #222;
+    font-weight: 900;
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu {
+    width: 85%;
+    height: 85%;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+    
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu  .sub-top-menu {
+    width: 100%;
+    height: 10%;
+    border-width: 1px 1px 0 1px;
+    border-color: rgb(216, 217, 219);
+    border-style: solid;
+    display: flex;
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu  .sub-top-menu .top-first-menu {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: #222;
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu  .sub-top-menu .top-first-menu p {
+    color: rgb(34, 34, 34);
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu  .sub-top-menu .top-second-menu  {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #222;
+    cursor: pointer;
+}   
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu  .sub-top-menu .top-second-menu p {
+    color: rgb(34, 34, 34);
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu  .sub-middle-menu {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu  .sub-middle-menu .middle-first-menu {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu  .sub-middle-menu .middle-first-menu .first-menu-item {
+    width: 100%;
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu  .sub-middle-menu .middle-first-menu .first-menu-item p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: 900;
+}   
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu  .sub-middle-menu .middle-second-menu {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    display: none;
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu  .sub-middle-menu .middle-second-menu .second-menu-item {
+    width: 100%;
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu  .sub-middle-menu .middle-second-menu .second-menu-item p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: 900;
+}   
+
+
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu .sub-bottom-menu {
+    width: 100%;
+    height: 25%;
+    border: 1px solid rgb(216, 217, 219);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu .sub-bottom-menu .bottom-menu {
+
+}
+
+main .box .ticketing-container .menu .movie-menu .movie-sub-menu .sub-bottom-menu .bottom-menu p {
+    text-align: center;
+    color: rgb(34, 34, 34);
+}
+
+main .box .ticketing-container .menu .theater-menu {
+    width: 32%;
+    height: 100%;
+    position: relative;
+}
+
+main .box .ticketing-container .menu .theater-menu > h1 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #222;
+    font-weight: 900;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu {
+    width: 85%;
+    height: 85%;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-top-menu {
+    width: 100%;
+    height: 10%;
+    border-width: 1px 1px 0 1px;
+    border-color: rgb(216, 217, 219);
+    border-style: solid;
+    display: flex;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-top-menu .top-first-menu {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: #222;
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-top-menu .top-first-menu p {
+    color: rgb(34, 34, 34);
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-top-menu .top-second-menu {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #222;
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-top-menu .top-second-menu p {
+    color: rgb(34, 34, 34);
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-first-menu {
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid rgb(216, 217, 219);
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-first-menu .first-menu-item {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-first-menu .first-menu-item p {
+    font-size: 13px;
+    color: black;
+    font-weight: 900;
+    cursor: pointer;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu {
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .location-area {
+    display: block;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .seoul-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .seoul-area .second-menu-item {
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .gyeonggi-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .gyeonggi-area .second-menu-item {
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .incheon-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .incheon-area .second-menu-item {
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .daejeon-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .daejeon-area .second-menu-item {
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .busan-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .busan-area .second-menu-item {
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .gwangju-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .gwangju-area .second-menu-item {
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .gangwon-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .gangwon-area .second-menu-item {
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .jeju-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .jeju-area .second-menu-item {
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-first-menu .second-menu-item {
+    width: 100%;
+    
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middle-menu .middle-second-menu .second-menu-item p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    color: black;
+    font-weight: 900;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu .middle-first-menu  {
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid rgb(216, 217, 219);
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu .middle-first-menu .first-menu-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu .middle-first-menu .first-menu-item p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: 900;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu .middle-second-menu {
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu .middle-second-menu .dolby-cinema-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu .middle-second-menu .mega-mx4d-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu .middle-second-menu .the-boutique-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu .middle-second-menu .dolby-atmos-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu .middle-second-menu .comfort-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu .middle-second-menu .megabox-kids-area {
+    display: none;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu .middle-second-menu .second-menu-item {
+    width: 100%;
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-middleSecond-menu .middle-second-menu .second-menu-item p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-bottom-menu {
+    width: 100%;
+    height: 25%;
+    border: 1px solid rgb(216, 217, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-bottom-menu .bottom-menu {
+
+}
+
+main .box .ticketing-container .menu .theater-menu .theater-sub-menu .sub-bottom-menu .bottom-menu p {
+    text-align: center;
+    color: rgb(34, 34, 34);
+}
+
+main .box .ticketing-container .menu .time-menu {
+    width: 43%;
+    height: 100%;
+    position: relative;
+}   
+
+main .box .ticketing-container .menu .time-menu .time-menu-top {
+    width: 100%;
+    height: 10%;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-top > h1 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #222;
+    font-weight: 900;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-top img {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-middle {
+    width: 100%;
+    height: 8%;
+    border-top: 1px solid rgb(216, 217, 219);
+    border-bottom: 1px solid rgb(216, 217, 219);
+    display: flex;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-middle .swiper-prev {
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: rgb(157, 157, 157);
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-middle .swiper-container {
+    width: 74%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-middle .swiper-container .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-middle .swiper-container .swiper-wrapper .swiper-slide {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-middle .swiper-container .swiper-wrapper .swiper-slide p {
+    color: gray;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-middle .swiper-next {
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(157, 157, 157);
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom {
+    width: 100%;
+    height: 82%;
+    position: relative;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .movie-time {
+    width: 100%;
+    height: 99%;
+    display: none;
+    overflow-y: auto;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .movie-time .time-show{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    border-bottom: 1px solid rgb(216, 217, 219);
+    cursor: pointer;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .movie-time .time-show .time {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .movie-time .time-show .time p {
+    font-size: 15px;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .movie-time .time-show .time p:first-child {
+    padding-bottom: 10px;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .movie-time .time-show .time p:last-child {
+    color: gray;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .movie-time .time-show .info {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .movie-time .time-show .info p {
+    font-size: 15px;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .movie-time .time-show .info p:first-child {
+    padding-bottom: 10px;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .movie-time .time-show .area {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .movie-time .time-show .area p {
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .movie-time .time-show .area p:last-child {
+    padding-bottom: 0;
+    color: gray;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .bottom-menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .bottom-menu .bottom-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .bottom-menu .bottom-main img {
+    cursor: default;
+}
+
+main .box .ticketing-container .menu .time-menu .time-menu-bottom .bottom-menu .bottom-main p {
+    padding-top: 10px;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+}
+
+main .box .advertisement {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 90px;
+}
+
+main .box .advertisement a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+main .box .advertisement a img {
+    width: 100%;
+    height: 100%;
+}
+
+main .home-menu {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(68, 68, 68);
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+main .home-menu .select-menu {
+    width: 1180px;
+    height: 100%;
+    position: relative;
+    left: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main .home-menu .select-menu .material-symbols-outlined {
+    color: gray;
+}
+
+main .home-menu .select-menu .select1 a {
+    display: flex;
+    align-items: center;
+}
+
+main .home-menu .select-menu .select1 a:hover p {
+    text-decoration: underline;
+}
+
+main .home-menu .select-menu .select1 .material-symbols-outlined {
+    position: relative;
+    top: 2px;
+}
+
+main .home-menu .select-menu .select2  a {
+    display: flex;
+    align-items: center;
+}
+
+main .home-menu .select-menu .select2  a:hover  p {
+    text-decoration: underline;
+}
+
+main .home-menu .select-menu .select2 .material-symbols-outlined {
+    position: relative;
+    top: 2px;
+}
+
+/* 빠른예매 영화 타이틀지역 체크 테스트용 */
+.checkedValue/* ,
+.movie-menu .sub-middle-menu .first-menu-item */ {
+	background-color : red;
+}
+
+/* 전체 스크롤바 스타일링 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+/* 스크롤바 트랙 */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+/* 스크롤바 핸들 */
+::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 10px;
+}
+
+/* 스크롤바 핸들 호버 */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    cursor: pointer;
+}

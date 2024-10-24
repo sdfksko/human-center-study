@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="review">
+	<select id="updateLike" parameterType="hashmap">
+		update review set 
+		<if test="type=='plus'">reviewLike=reviewLike+1</if>
+		<if test="type=='minus'">reviewLike=reviewLike-1</if>
+		where reviewIdx=#{movieIdx}
+	</select>
+	
+	<select id="selectMovieRef" parameterType="int" resultType="ReviewDTO">
+		select * from review where movieref=#{movieRef}
+	</select>
+	
+	<!-- 최신순, 공감순, 평점순 -->
+	<select id="selectType" parameterType="hashmap" resultType="ReviewDTO">
+		select * from review where movieref=#{movieRef}
+		<choose>
+			<when test="type=='recently'">
+				order by regdate
+			</when>
+			<when test="type=='reviewLike'">
+				order by reviewlike desc
+			</when>
+			<when test="type=='movieLike'">
+				order by movielike desc
+			</when>
+		</choose>
+	</select>
+	
+	<select id="selectByReviewIdx" parameterType="int" resultType="ReviewDTO">
+		select * from review where reviewidx=#{reviewIdx}
+	</select>
+	
+	<insert id="insertReview" parameterType="ReviewDTO">
+		insert into review values(reviewidx.nextval,#{title},0,#{movieRef},sysdate,#{userId},#{movieLike})
+	</insert>
+</mapper>

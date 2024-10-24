@@ -1,0 +1,505 @@
+@charset "UTF-8";
+.boutique{
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.boutique-title{
+    margin: 0;
+    padding: 0 0 16px 0;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #503396;
+    line-height: 1.1;
+}
+.boutique .main-img{
+    width: 100%;
+    height: 305px;
+}
+.boutique .main-img img{
+    width: 100%;
+}
+.boutiqueSwiper{
+    margin-top: 50px;
+}
+.swiper-slide.calendar {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 7px;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.swiper-wrapper.calendar{
+	height:73px;
+    border-top: 1px solid #d8d9db;
+    border-bottom: 1px solid #d8d9db;
+}
+.swiper-button-next.calendar::after{
+    position: absolute;
+    right: 0;
+    top: 17px;
+    font-size: .8em;
+}
+.swiper-button-prev.calendar::after{
+    position: absolute;
+    left: 0;
+    top: 17px;
+    font-size: .8em;
+}
+.boutique-dayOfWeek{
+	font-size: .9em;
+}
+.boutique-dayOfWeek.red{
+	color:red;
+}
+.boutique-dayOfWeek.blue{
+	color:blue;
+}
+.swiper-slide.selected{
+    border-bottom: 3px solid #503396;
+}
+.reserve-box{
+    display: flex;
+    height: 327px;
+}
+.reserve-location{
+    width: 160px;
+    height: 320px;
+    border-bottom: 1px solid #d8d9db;
+}
+.reserve-location-title{
+    font-size: 1.2em;
+    width: 80%;
+    height: 60px;
+    line-height: 60px;
+}
+.reserve-location .room2{
+    width: 90%;
+    height: 70px;
+    padding: 10px 0;
+    line-height: 26px;
+    text-align: center;
+    border: 1px solid #e0d4d4;
+    box-sizing: border-box;
+}
+.reserve-location .room2:hover{
+    background-color: #503396;
+    color: #fff;
+    border: none;
+}
+.reserve-location .room1{
+    border: none;
+     width: 90%;
+    height: 70px;
+    padding: 10px 0;
+    line-height: 26px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #e0d4d4;
+}
+.reserve-date{
+    width: 120px;
+    border: 1px solid #d8d9db;
+    box-sizing: border-box;
+}
+.reserve-date-title{
+    font-size: 1.2em;
+    height: 60px;
+    line-height: 60px;
+    width: 80%;
+    margin: 0 auto;
+}
+.reserve-date-box .item{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    line-height: 68px;
+    width: 80%;
+    height: 58px;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+.rental-info{
+    margin-top: 40px;
+}
+.rental-info-title{
+    margin: 0;
+    padding: 0 0 16px 0;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #503396;
+    line-height: 1.1;
+    border-bottom: 1px solid black;
+}
+.rental-box-header{
+    display: flex;
+}
+.rental-box-header .item{
+    flex-grow: 1;
+    padding: 15px 0 14px;
+    background: #f8f8fa;
+    border-bottom: 1px solid rgb(248,248,252);
+    color: #222;
+    font-size: 15px;
+    border-left: 1px solid #eaeaea;
+    font-weight: bold;
+    text-align: center;
+}
+.rental-box-content{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: 
+    'a b c d e'
+    'f g h i e'
+    ;
+}
+.rental-box-content .item{
+    padding: 15px 0 14px;
+    text-align: center;
+    font-size: 15px;    
+    text-align: center;
+}
+.rental-box-content .item:nth-child(5){
+    grid-area: e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rental-text li{
+    list-style: circle;
+    width: 74%;
+    font-size: .9em;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.package-area{
+    margin-top: 60px;
+}
+.package-area-title{
+    margin: 0;
+    padding: 0 0 16px 0;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #503396;
+    line-height: 1.1;
+}
+.package-sup-title{
+    font-size: 13px;
+    line-height: 15px;
+    padding: 14px 0 13px 20px;
+    border-radius: 5px;
+    background-color: #f8f8fa;
+}
+.package-wrap{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 25px;
+    height: 700px;
+    overflow: hidden;
+}
+.package-wrap .item{
+    width: 350px;
+}
+.package-wrap img{
+    width: 350px;
+}
+.food-info{
+    display: block;
+    width: 100%;
+    min-height: 189px;
+    padding: 0 0 0 20px;
+    border: 1px solid #e4e4e4;
+    border-width: 0 1px 1px 1px;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+}
+.food-info .name-area{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #e4e4e4;
+    letter-spacing: -.01em;
+    margin-right: 16px;
+}
+.food-info .name-area p{
+    padding: 23px 0 19px;
+    font-size: 18px;
+    line-height: 21px;
+}
+.dot_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 8px 0 20px;
+}
+.dot_list li{
+    width: 50%;
+    font-size: .85em;
+    padding-bottom: 5px;
+}
+.package-text{
+    margin-top: 10px;
+}
+.package-text p{
+    position: relative;
+    padding-top: 8px;
+    padding-left: 7px;
+    line-height: 16px;
+    letter-spacing: -.01em;
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+}
+.package-button{
+    display: block;
+    width: 120px;
+    height: 36px;
+    margin: 20px auto 40px;
+    border: 1px solid #503396;
+    border-radius: 5px;
+    color: #503396;
+    font-size: 15px;
+    text-align: center;
+    outline: 0;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+
+.movieSwiper{
+    width: 700px;
+}
+.movieSwiper .swiper-slide{
+    width: 130px;
+}
+.movieSwiper img{
+    width: 130px;
+}
+.movieSwiper .movie-title{
+    padding: 10px 0;
+}
+.reserve-movie{
+    margin: 0 auto;
+}
+.reserve-movie-title{
+    padding: 20px 0;
+    font-size: 1.2em;
+}
+.reserve-movie-button{
+    margin: 0;
+    width: 100%;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    color: #444;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.movieSwiper .swiper-wrapper{
+    column-gap: 5px;
+}
+.movieSwiper .swiper-button-next.movie{
+    position: absolute;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/store/btn-plan-next-off.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 80px;
+    width: 100px;
+    height: 50px;
+    right: -70px;
+    z-index: 10;
+}
+.movieSwiper .swiper-button-prev.movie{
+    position: absolute;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/store/btn-plan-prev-off.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 80px;
+    width: 100px;
+    height: 50px;
+    left: -20px;
+    z-index: 10;
+}
+.movieSwiper .swiper-button-next.movie::after{
+    display: none;
+}
+.movieSwiper .swiper-button-prev.movie::after{
+    display: none;
+}
+
+
+
+.payment-box{
+    height: 650px;
+}
+.payment-title{
+    margin: 0;
+    padding: 0 0 16px 0;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #503396;
+    line-height: 1.1;
+}
+.paymentArea{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 549px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px;
+}
+.paymentArea .info{
+    position: relative;
+    padding-left: 165px;
+    min-height: 202px;
+}
+.paymentArea .info img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 142px;
+    height: 202px;
+    overflow: hidden;
+    background-size: 142px 202px;
+}
+.paymentArea .payment{
+    position: relative;
+    width: 500px;
+    background-color: #434343;
+    padding: 20px;
+    border-radius: 10px;
+}
+.paymentArea .noti{
+    padding-top: 10px;
+    margin-top: 30px;
+    border-top: 1px solid #434343;
+    color: #fff;
+    grid-area: 2 / 1 / 3 / 3;
+}
+.dot_list_dl dt{
+    padding-top: 20px;
+    font-size: 15px;
+}
+.dot_list_dl dd{
+    position: relative;
+    padding-top: 8px;
+    padding-left: 11px;
+    line-height: 16px;
+    letter-spacing: -.01em;
+    font-size: 14px;
+    font-weight: 300;
+}
+.payment .total{
+    position: relative;
+    line-height: 38px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    font-size: 18px;
+    color: #fff;
+}
+.payment .total span{
+    margin-left: 237px;
+}
+.payment .total span em{
+    color: #59bec9;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 32px;
+    display: inline-block;
+    padding-right: 4px;
+}
+.payment .top{
+    padding-left: 74px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.payment .top .tit{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    line-height: 28px;
+    color: #c4c4c4;
+}
+.payment .top .pay li{
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.payment .top .pay label{
+    font-size: 15px;
+    line-height: 28px;
+    width: 120px;
+}
+input,.x-small{
+    height: 25px;
+}
+.pay .top .pay .plusInput input{
+    line-height: 28px;
+    margin: 0;
+    margin-right: 6px;
+}
+.payment .top .pay .btn{
+    width: 45px;
+    border-radius: 4px;
+    background-color: #666;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+.paymentArea .dot_list{
+    display: flex;
+}
+.paymentArea .dot_list li{
+    padding-top: 16px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 17px;
+    padding-left: 11px;
+    width: 300px;
+}
+.noti .ck{
+    padding-top: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+.payment-button{
+    position: relative;
+    top:20px;
+    left:50%;
+    display: inline-block;
+    height: 36px;
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 34px;
+    color: #503396;
+    font-weight: 400;
+    border-radius: 4px;
+    font-family: NanumBarunGothic, Dotum, '돋움', sans-serif;
+    text-decoration: none;
+    border: 1px solid #503396;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+}

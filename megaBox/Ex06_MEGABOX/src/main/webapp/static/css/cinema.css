@@ -1,0 +1,389 @@
+@charset "UTF-8";
+main {
+    margin-top: 45px;
+    margin-bottom: 300px;
+}
+
+main .container {
+    width: 100%;
+    height: 900px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/theater/bg-speacial-bg.png);
+    background-position-x: center;
+    background-position-y: top;
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    position: relative;
+}
+
+main .container .container-box {
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    left: 20px;
+}
+
+main .container .container-box .name-tag {
+    position: absolute;
+    top: 100px;
+}
+
+main .container .container-box .name-tag img{
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+main .container .container-box .name-tag h1 {
+    font-size: 28px;
+    padding: 5px;
+    color: rgb(53, 76, 136);
+}
+
+main .container .container-box .imagebox {
+    border-radius: 10px;
+}
+
+main .container .container-box .imagebox:hover a .imagebox-shadow {
+    display: block;
+}
+
+main .container .container-box .imagebox:nth-child(2) {
+    width: 540px;
+    height: 260px;
+    position: absolute;
+    top: 50px;
+    left: 270px;
+}
+
+main .container .container-box .imagebox:nth-child(3) {
+    width: 260px;   
+    height: 260px;
+    position: absolute;
+    top: 50px;
+    right: 45px;
+}
+
+main .container .container-box .imagebox:nth-child(4) {
+    width: 810px;
+    height: 260px;
+    position: absolute;
+    top: 330px;
+}
+
+main .container .container-box .imagebox:nth-child(4) a img {
+    width: 100%;
+}
+
+main .container .container-box .imagebox:nth-child(5) {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 330px;
+    right: 45px;
+}
+
+main .container .container-box .imagebox:nth-child(5) a img {
+    height: 100%;
+}
+
+main .container .container-box .imagebox:nth-child(6) {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 610px;
+    
+}
+
+main .container .container-box .imagebox:nth-child(6) a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+main .container .container-box .imagebox:nth-child(7) {
+    width: 540px;
+    height: 260px;
+    position: absolute;
+    top: 610px;
+    left: 270px;
+}
+
+main .container .container-box .imagebox:nth-child(7) a img {
+    width: 100%;
+    height: 100%;
+}
+
+main .container .container-box .imagebox:nth-child(8) {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    right: 45px;
+    top: 610px;
+}
+
+main .container .container-box .imagebox a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+main .container .container-box .imagebox a img {
+
+}
+
+main .container .container-box .imagebox a .imagebox-text {
+    position: relative;
+    bottom: 230px;
+    left: 30px;
+}
+
+main .container .container-box .imagebox a .imagebox-text h1 {
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+main .container .container-box .imagebox a .imagebox-text p {
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+main .container .container-box .imagebox a .imagebox-shadow {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 340px;
+    border-radius: 10px;
+    display: none;
+}
+
+main .container .container-box .imagebox:nth-child(2) a .imagebox-shadow {
+    background-color: rgba(81, 46, 26, 0.87);
+}
+
+main .container .container-box .imagebox:nth-child(3) a .imagebox-shadow {
+    bottom: 373px;
+    background-color: rgba(81, 47, 28, 0.87);
+}
+
+main .container .container-box .imagebox:nth-child(4) a .imagebox-shadow {
+    background-color: rgba(24, 34, 75, 0.87);
+}
+
+main .container .container-box .imagebox:nth-child(5) a .imagebox-shadow {
+    background-color: rgba(49, 29, 57, 0.87);
+}
+
+main .container .container-box .imagebox:nth-child(6) a .imagebox-shadow {
+    background-color: rgba(3, 0, 128, 0.87);
+}
+
+main .container .container-box .imagebox:nth-child(7) a .imagebox-shadow {
+    bottom: 318px;
+    background-color: rgb(55, 53, 106);
+}
+
+main .container .container-box .imagebox:nth-child(8) a .imagebox-shadow {
+    bottom: 365px;
+    background-color: rgba(209, 147, 15, 0.87);
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text h1 {
+    font-size: 30px;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text > h1 {
+    font-size: 30px;
+    padding-bottom: 13px;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text p {
+
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text .comfortText {
+    width: 150px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 50% 50%;
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text .comfortText h1 {
+    color: rgb(57, 34, 58);
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text img {
+    width: 250px;
+
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text .meaga4DText {
+    width: 190px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text .meaga4DText .meaga4DText1 {
+    width: 95px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text .meaga4DText .meaga4DText1 h1 {
+    font-size: 25px;
+    color: rgb(5, 2, 132);
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text .meaga4DText .meaga4DText2 {
+    width: 90px;
+    height: 55px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text .meaga4DText .meaga4DText2 h1 {
+    font-size: 25px;
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text .kids {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text .kids .kids-item {
+    width: 25px;
+    height: 40px;
+    background-color: #fff;
+    margin: 0px 2px 4px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .container-box .imagebox a .imagebox-shadow .imagebox-shadow-text .text .kids .kids-item h1 {
+    color: orange;
+    font-size: 20px;
+}
+
+main .container .container-box .imagebox a .arrow {
+
+}
+
+main .top {
+    cursor: pointer;
+}
+
+main .top .top-show {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0px;
+    bottom: 225px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+main .top .material-symbols-outlined {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    bottom: 4px;
+}
+
+main .top .top-text {
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    bottom: 8px;
+}
+
+main .home-menu {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(68, 68, 68);
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+main .home-menu .select-menu {
+    width: 1180px;
+    height: 100%;
+    position: relative;
+    left: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main .home-menu .select-menu .material-symbols-outlined {
+    color: gray;
+}
+
+main .home-menu .select-menu .select1 a {
+    display: flex;
+    align-items: center;
+}
+
+main .home-menu .select-menu .select1 a:hover p {
+    text-decoration: underline;
+}
+
+main .home-menu .select-menu .select1 .material-symbols-outlined {
+    position: relative;
+    top: 2px;
+}
+
+main .home-menu .select-menu .select2  a {
+    display: flex;
+    align-items: center;
+}
+
+main .home-menu .select-menu .select2  a:hover  p {
+    text-decoration: underline;
+}
+
+main .home-menu .select-menu .select2 .material-symbols-outlined {
+    position: relative;
+    top: 2px;
+}

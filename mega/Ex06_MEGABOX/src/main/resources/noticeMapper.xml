@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="notice">
+	<select id="selectAll" parameterType="hashmap" resultType="NoticeDTO">
+		SELECT idx row_num, idx,name,category,title,regdate 
+		FROM
+		(SELECT rownum row_num, t.*FROM (SELECT * FROM notice WHERE 
+		<choose>
+		<when test="type=='megabox'">name='메가박스'</when>
+		<when test="type=='other'">name!='메가박스'</when>
+		<otherwise>1=1</otherwise>
+		</choose>
+		<if test="title!='' and title!=null">and title like '%'|| #{title} || '%'</if> 
+		 ORDER BY idx desc)t WHERE <![CDATA[rownum<=#{endNo}]]>)a 
+		WHERE <![CDATA[row_num>=#{startNo}]]>
+	</select>
+	
+	<select id="selectCount" parameterType="hashmap" resultType="int">
+		select count(*) from notice  where 
+		<choose>
+		 	<when test="type=='megabox'">name='메가박스'</when>
+		 	<when test="type=='other'">name !='메가박스'</when>
+		 	<otherwise>1=1</otherwise>
+		 </choose> 
+		 <if test="title!='' and title!=null">and title like '%'|| #{title}||'%'</if>
+	</select>
+	
+	<select id="selectByIdx" parameterType="int" resultType="NoticeDTO">
+		select * from notice where idx=#{idx}
+	</select>
+	
+	<select id="selectPrevAndNext" parameterType="hashmap" resultType="NoticeDTO">
+		select * from notice where <if test="type=='plus'">idx=#{idx}+1</if>
+		<if test="type=='minus'">idx=#{idx}-1</if>
+	</select>
+	
+	<select id="selectTheaterNotice" resultType="NoticeDTO">
+		select * from notice where <![CDATA[rownum<=5]]> and name!='메가박스'
+	</select>
+</mapper>
